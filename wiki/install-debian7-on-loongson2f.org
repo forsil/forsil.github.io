@@ -88,7 +88,7 @@ apt-get install font-manager ttf-arphic-uming ttf-arphic-ukai sensible-mda sensi
 #+BEGIN_SRC sh
 dpkg-reconfigure locales
 #+END_SRC
-通常我会选择 en_US.utf-8 和 zh_CN.utf-8
+通常我会选择 en\_US.utf-8 和 zh\_CN.utf-8
 同步时间
 #+BEGIN_SRC sh
 ntpdate ntp.sjtu.edu.cn && hwclock --systohc --localtime
