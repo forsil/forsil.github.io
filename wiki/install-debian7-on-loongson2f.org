@@ -2,7 +2,7 @@
 #+DATE: <2014-09-01 Mon>
 #+AUTHOR: forsil
 #+EMAIL: forsil.9@gmail.com
-#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline ^:nil
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline ^:{}
 #+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
 #+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
 #+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
