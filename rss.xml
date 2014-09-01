@@ -4,9 +4,16 @@
     <title>如是凡说</title>
     <link>http://forsil.github.io</link>
     <description>=====逝者如斯，上善若水=====</description>
-    <pubDate>一, 01 9月 2014 00:55:34 CST</pubDate>
-    <lastBuildDate>一, 01 9月 2014 00:55:34 CST</lastBuildDate>
+    <pubDate>Mon, 01 Sep 2014 10:58:19 CST</pubDate>
+    <lastBuildDate>Mon, 01 Sep 2014 10:58:19 CST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>在龙芯2f 8089b机器上安装 Debian7</title>
+      <link>http://forsil.github.io/blog/2014/09/01/在龙芯2f-8089b机器上安装-debian7/</link>
+      <description></description>
+      <pubDate>2014-09-01</pubDate>
+      <guid>http://forsil.github.io/blog/2014/09/01/在龙芯2f-8089b机器上安装-debian7/</guid>
+    </item>
   </channel>
 </rss>
