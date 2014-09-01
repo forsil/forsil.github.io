@@ -8,10 +8,9 @@
 #+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
 #+CREATOR: Emacs 24.3.2 (Org mode 8.2.7c)
 #+DESCRIPTION: install debian7 on loongson
-#+EXCLUDE_TAGS: noexport
-#+KEYWORDS: linux loongson debian
+#+KEYWORDS: linux, loongson, debian
 #+LANGUAGE: en
-#+SELECT_TAGS: linux loongson debian
+#+TAGS: :linux:loongson:debian:
 
 本篇只是对网上在龙芯 2f 上安装 debian7 系统的一个整理，更可以为了我以后重新安装 debian7 提供方便（我才不说这才是我真正的目的呢）。
 
