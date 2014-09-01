@@ -7,8 +7,111 @@
 #+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
 #+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
 #+CREATOR: Emacs 24.3.2 (Org mode 8.2.7c)
-#+DESCRIPTION:
+#+DESCRIPTION: install debian7 on loongson
 #+EXCLUDE_TAGS: noexport
-#+KEYWORDS:
+#+KEYWORDS: linux loongson debian
 #+LANGUAGE: en
 #+SELECT_TAGS: linux loongson debian
+
+本篇只是对网上在龙芯 2f 上安装 debian7 系统的一个整理，更可以为了我以后重新安装 debian7 提供方便（我才不说这才是我真正的目的呢）。
+
+* 网络安装 Debian
+首先你得有个u盘，网上说最好不要超过2g，或者是就分配个低于2g的分区，我是直接就拿了一个2g的u盘建了 ext2 分区，然后直接就进入引导，没有网上说的需要在 PMON 上输入命令，接下来就
+一步步地按着提示走。需要注意的是如果语言选择了简体中文，之后在 tty 终端显示会有一些信息显示不出来。
+还有建立分区时最好手动分区，如果是 lvm 自动分区的话，后面万一空间不足，需要调整分区很麻烦（麻烦的是缩小分区很容易出问题，扩大很简单）。
+选择一个好一点的镜像源，软件包把 laptop 选上，不要选那个 desktop enviroment，然后就是漫长的等待了。
+
+* 安装 Xfce4
+装完系统之后进入的是文本界面，我要安装一个图形界面。相比 lxde，我比较喜欢 xfce4。要安装 xfce4,
+首先得保证有网络。如果你是有线的话，应该直接就可以用了（通常家里都有个路由器，无须拨号）；如果是
+无线的话，就有点麻烦，要先打开无线开关，然后
+#+BEGIN_SRC sh
+ifconfig wlan0 up
+#+END_SRC
+此时再输入
+#+BEGIN_SRC sh
+ifconfig
+#+END_SRC
+应该能够看到 wlan0 了。这时要看无线网络的类型了，如果是 WEP 的话（我不太认为还会有这种加密的网络），
+输入
+#+BEGIN_SRC sh
+iwconfig wlan0 essid "AP's SSID" key "PASSWORD" restricted
+#+END_SRC
+然后通过 dhcp 获取 ip
+#+BEGIN_SRC sh
+dhclient wlan0
+#+END_SRC
+此时输入
+#+BEGIN_SRC sh
+ifconfig
+#+END_SRC
+应该可以看到 ip 了。
+如果是 wpa/wpa2 网络的话，与 WEP 略有不同，在看到 wlan0 之后，输入（必须要保证 wpasupplicant 软件包已经安装）
+#+BEGIN_SRC sh
+wpa_supplicant -i wlan0 -c <(wpa_passphrase essid "AP's SSID" psk "PASSWORD")
+#+END_SRC
+再输入
+#+BEGIN_SRC sh
+dhclient wlan0
+#+END_SRC
+搞定网络之后，开始安装 xfce4（按照贴吧的一个教程，默认用户为 root 用户）
+#+BEGIN_SRC sh
+apt-get install chkconfig
+chkconfig exim4 off
+chkconfig bluetooth off
+apt-get install w3m-img fbterm gpm ttf-wqy-zenhei fonts-cwtex-fs xserver-xorg
+#+END_SRC
+龙芯的一个大问题就是显卡驱动， debian7 的显卡驱动可以去贴吧寻找，或者有人搭建了一个龙芯分享平台
+[[http://www.longsoner.com][loongsoner]]。 将压缩包解压，拷贝 xorg.conf 到 /etc/X11 目录下
+#+BEGIN_SRC sh
+cp xorg.conf /etc/X11/
+#+END_SRC
+安装 xserver-xorg-video-siliconmotion_1.7.6-1loongson_mipsel.deb （建议 TAB 补全文件名）
+#+BEGIN_SRC sh
+dpkg -i xserver-xorg-video-siliconmotion_1.7.6-1loongson_mipsel.deb
+#+END_SRC
+安装 fcitx 输入法
+#+BEGIN_SRC sh
+apt-get install fcitx
+#+END_SRC
+安装 xfce4
+#+BEGIN_SRC sh
+apt-get install xfce4 xfce4-goodies lightdm
+#+END_SRC
+安装一些有用的包
+#+BEGIN_SRC sh
+apt-get install sudo hardinfo alsa-utils alsa-oss smplayer rekonq
+apt-get install fcitx-pinyin network-manager network-manager-gnome rfkill
+apt-get install synaptic ntpdate packagekit gnome-packagekit gnome-disk-utility
+apt-get install font-manager ttf-arphic-uming ttf-arphic-ukai sensible-mda sensible-utils
+#+END_SRC
+选择一下编码环境
+#+BEGIN_SRC sh
+dpkg-reconfigure locales
+#+END_SRC
+通常我会选择 en_US.utf-8 和 zh_CN.utf-8
+同步时间
+#+BEGIN_SRC sh
+ntpdate ntp.sjtu.edu.cn && hwclock --systohc --localtime
+#+END_SRC
+卸载一些包
+#+BEGIN_SRC sh
+apt-get remove pulseaudio pkg-config
+#+END_SRC
+重启，享受你的 debian 之旅吧！
+#+BEGIN_SRC sh
+reboot
+#+END_SRC
+
+* 我额外安装的软件包
+#+BEGIN_SRC sh
+apt-get install vim # 没什么好说的，linux 中 vim 是必须装的
+apt-get install emacs # emacs，我肯定要装的
+apt-get install git # git，版本管理软件，必装，通向 github
+apt-get install zsh # 非常好用的 shell，配合 oh-my-zsh，功能强大
+curl -L http://install.ohmyz.sh | sh
+apt-get install stardict # 字典
+apt-get install cmus # 文本界面的音乐播放器
+#+END_SRC
+
+想要了解更多有关龙芯的消息，可以去[[http://tieba.baidu.com/f?kw=%C1%FA%D0%BE][龙芯吧]]， [[http://dev.lemote.com/trac/linux-loongson-community/wiki][龙芯社区]] 和 [[https://groups.google.com/forum/#!forum/loongson-dev][龙芯 Google Group]]。
