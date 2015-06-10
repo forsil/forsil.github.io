@@ -1,0 +1,57 @@
+#+TITLE: Macbook Pro 13
+#+AUTHOR: forsil
+#+EMAIL: forsil.9@gmail.com
+
+* 开箱 Macbook Pro 13 (2015 early)
+网上很多开箱照，我就不献丑了
+
+* 开机
+开机之后就是安装界面，一步一步地走就行了。
+
+* 启动
+osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是坏，反正不觉得丑就行了。
+
+* 装软件
+进入正题，作为一台开发机器，各种软件是必不可少的，待我细细道来：
+
+- xcode: 作为开发机器，xcode 是必须的，不多说
+- steam: 游戏虽然不是必须的，但缺少的话总是感觉有点不习惯
+  - Dota2: 虽然是个手残菜鸟，但还是要装的
+- battle.net: 暴雪的战网客户端，Mac 下也是可以玩炉石，WoW 的，还是原生的哦 [[http://dist.blizzard.com/downloads/bna-installers/322d5bb9ae0318de3d4cde7641c96425/beta.3/Battle.net-Beta-Setup-zhCN.zip][下载地址]]
+- shadowsocksX: 你懂的，必需品，从此 Google 有望
+- mplayerx: 视频播放器，没怎么用过
+- vlc: 也是一款视频播放器
+- Google Chrome: 网页浏览器，主要用来看 flash 视频
+- Firefox: 同是网页浏览器，以前 Linux 上的主力，在 OSX 上还行
+- 网易云音乐: 不想下载，只是在线听，特点是资源丰富，而且有许多别人整理的歌单
+- dropbox: 网盘，已经习惯了，不打算改
+- Thunder: 迅雷，偶尔下载稀缺资源用
+- evernote: 资料整理，以前整理的都在这上面
+- textmate: OSX 上非常强大的编辑器，虽然我用 emacs，但它还是必须得推荐的
+- eamcs: 我的编辑器
+- iterm2: 替代 OSX 自带的虚拟终端
+- github for mac: 图形查看 github repo 信息
+- parallels desktop: 最强虚拟机，小声
+- the unarchiver: 解压缩工具，免费的
+- kindle: 看 kindle 书籍用
+- keepassx: 密码管理器
+- dash: api文档管理器，可以查看各种软件 api，可免费
+- noizio: 白噪声，免费
+- alfred: Mac 最强利器，配合 powerpack，免费的功能和 OSX 自带的 spotlight 差不多，workflow 才是它的魅力所在
+  - douban: 搜索豆瓣内容
+  - flux: 控制 f.lux
+  - taobao suggest: 淘宝搜索
+  - v2ex: v2ex 贴子搜索
+  - workflow searcher: 搜索 workflows
+- f.lux: 色温调节
+- homebrew: 包管理器，让 OSX 的终端表现与 Linux 一样出色
+- zsh: 系统自带，功能强大
+  - oh-my-zsh: zsh 的一些配置
+- safari 插件: 让 safari 更加强大
+  - ublock: 过滤广告
+  - feedly notifier: feedly rss 更新通知
+  - wikiwand: 让 wikipedia 更加美丽
+  - clicktopluginforchina: 让能够支持 html5 播放的视频网站使用 html5 播放，不用煮鸡蛋，获取该插件请在 twitter 上 @ilools
+  - turn of light: 看视频时周围变暗
+  - v2ex.ext: v2ex 长贴查看 @ 内容
+  - youkuhtml5player: 朱一的 “妈妈再也不用担心我发热” 计划
