@@ -1,0 +1,9 @@
+#+TITLE: 关于
+
+懒虫一枚，爱宅，时而平静，时而癫狂，经常三天打鱼，两天晒网
+
+ - Emacs 初学者，略懂 Vim，生产工具为 Emacs
+ - Archlinux 使用者，不过现已投向 OSX，但 Arch 的心不变
+ - 接触过 Python 的皮毛
+ - 嗜睡
+ - linux C 程序员
