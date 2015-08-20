@@ -4,4 +4,4 @@
 
 时光冉冉，不知几何……
 
-我，@@html:<a href="about">About</a>
+我，@@html:<a href="about">About</a>@@
