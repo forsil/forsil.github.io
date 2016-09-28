@@ -4,38 +4,20 @@
     <title>如是凡说</title>
     <link>http://forsil.github.io</link>
     <description>=====逝者如斯，上善若水=====</description>
-    <pubDate>Wed, 28 Sep 2016 15:17:04 CST</pubDate>
-    <lastBuildDate>Wed, 28 Sep 2016 15:17:04 CST</lastBuildDate>
+    <pubDate>Wed, 28 Sep 2016 15:55:00 CST</pubDate>
+    <lastBuildDate>Wed, 28 Sep 2016 15:55:00 CST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
-    <item>
-      <title>Emacs Keyboard</title>
-      <link>http://forsil.github.io/wiki/emacs-keyboard</link>
-      <description><![CDATA[emacs 命令速查，转抄自[[http://www.cnblogs.com/Henrya2/archive/2009/02/21/1395615.html]]]]></description>
-      <pubDate>2015-08-21</pubDate>
-      <guid>http://forsil.github.io/wiki/emacs-keyboard</guid>
-    </item>
     <item>
       <title>Macbook Pro 13</title>
       <link>http://forsil.github.io/blog/2016/09/28/macbook-pro-13/</link>
       <description><![CDATA[<div>
 <div class="post">
 <h1>Macbook Pro 13</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#orgheadline1">1. 开箱 Macbook Pro 13 (2015 early)</a></li>
-<li><a href="#orgheadline2">2. 开机</a></li>
-<li><a href="#orgheadline3">3. 启动</a></li>
-<li><a href="#orgheadline4">4. 装软件</a></li>
-</ul>
-</div>
-</div>
 
 <div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> 开箱 Macbook Pro 13 (2015 early)</h2>
-<div class="outline-text-2" id="text-1">
+<h2 id="orgheadline1">开箱 Macbook Pro 13 (2015 early)</h2>
+<div class="outline-text-2" id="text-orgheadline1">
 <p>
 网上很多开箱照，我就不献丑了
 </p>
@@ -43,8 +25,8 @@
 </div>
 
 <div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="section-number-2">2</span> 开机</h2>
-<div class="outline-text-2" id="text-2">
+<h2 id="orgheadline2">开机</h2>
+<div class="outline-text-2" id="text-orgheadline2">
 <p>
 开机之后就是安装界面，一步一步地走就行了。
 </p>
@@ -52,8 +34,8 @@
 </div>
 
 <div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="section-number-2">3</span> 启动</h2>
-<div class="outline-text-2" id="text-3">
+<h2 id="orgheadline3">启动</h2>
+<div class="outline-text-2" id="text-orgheadline3">
 <p>
 osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是坏，反正不觉得丑就行了。
 </p>
@@ -61,8 +43,8 @@ osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是
 </div>
 
 <div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4"><span class="section-number-2">4</span> 装软件</h2>
-<div class="outline-text-2" id="text-4">
+<h2 id="orgheadline4">装软件</h2>
+<div class="outline-text-2" id="text-orgheadline4">
 <p>
 进入正题，作为一台开发机器，各种软件是必不可少的，待我细细道来：
 </p>
@@ -123,8 +105,22 @@ osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是
 
 </div>
 </div>]]></description>
-      <pubDate>2015-06-11</pubDate>
+      <pubDate>2016-09-28</pubDate>
       <guid>http://forsil.github.io/blog/2016/09/28/macbook-pro-13/</guid>
+    </item>
+    <item>
+      <title>给 Synology 配置 Aria2</title>
+      <link>http://forsil.github.io/blog/2016/09/28/给-synology-配置-aria2</link>
+      <description><![CDATA[在 DSM 系统中通过 docker 添加 aria2 支持]]></description>
+      <pubDate>2016-09-28</pubDate>
+      <guid>http://forsil.github.io/blog/2016/09/28/给-synology-配置-aria2</guid>
+    </item>
+    <item>
+      <title>Emacs Keyboard</title>
+      <link>http://forsil.github.io/wiki/emacs-keyboard</link>
+      <description><![CDATA[emacs 命令速查，转抄自[[http://www.cnblogs.com/Henrya2/archive/2009/02/21/1395615.html]]]]></description>
+      <pubDate>2015-08-21</pubDate>
+      <guid>http://forsil.github.io/wiki/emacs-keyboard</guid>
     </item>
     <item>
       <title>C 语言程序设计 /* The C Programming Language */</title>
