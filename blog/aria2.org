@@ -43,3 +43,6 @@
   #+BEGIN_SRC sh
   chmod 777 </path/to/download folder>
   #+END_SRC
+
+* 参考链接
+  [[http://blog.binux.me/2012/12/aria2-examples][aria2配置示例 -- by Binuxの杂货铺]]
