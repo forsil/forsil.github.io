@@ -1,5 +1,0 @@
-#+TITLE: C 语言程序设计 /* The C Programming Language */
-#+AUTHOR: forsil
-#+EMAIL: forsil.9@gmail.com
-
-C 语言程序设计 读书笔记
