@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>观止 -- 微软创建 NT 和未来的夺命狂奔 - 如是凡说</title>
+    <title>Surge 的使用 - 如是凡说</title>
     <meta charset="utf-8" />
     <meta name="author" content="forsil" />
-    <meta name="description" content="本书讲述了微软在 1989-1993 年开发 NT 期间的酸甜苦辣" />
-    <meta name="keywords" content="Microsoft" />
+    <meta name="description" content="&lt;TODO: insert your description here&gt;" />
+    <meta name="keywords" content="&lt;TODO: insert your keywords here&gt;" />
     <link rel="stylesheet" href="/media/css/main.css" type="text/css">
     <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
   </head>
@@ -32,32 +32,94 @@
 
 <div>
 <div class="post">
-<h1>观止 -- 微软创建 NT 和未来的夺命狂奔</h1>
+<h1>Surge 的使用</h1>
 <p>
-基本上归纳出这几点：
+Surge 的功能有很多，具体可查看 Yachen Liu 的 <a href="https://manual.nssurge.com">Surge Manual</a>。
 </p>
-<ul class="org-ul">
-<li>高级管理人员的重要性：可以缓冲各技术人员的矛盾，把持项目方向</li>
-<li>研发人员要有自己的权力</li>
-<li>测试是重要的，对严重的 Bug 不能姑息</li>
-<li>需要协调一个大项目里面的各个组之间的矛盾</li>
-<li>软件开发也是很辛苦的，不仅身体上，还有精神上</li>
-<li>适当的放松是有必要的，不能把工作当成生活的全部</li>
-<li>软件的开发周期基本上是无法正确预估的，通常都会超出 deadline，不要太有心理压力，也不要太放松</li>
-<li>Bug 最好由相关开发人员亲自解决，远远低于其他开发人员修复该 Bug 所付出的代价</li>
-<li>项目开发期间不要有人员变动，也不要加入新人，因为可能你指导新人接手项目所花的时间已经足够你去完成该新人需要完成的开发</li>
-</ul>
 
 <p>
-以上只是看书有感，废话一堆，不要当真。这些想法需要你自己从书中得出，或者在实际经历中体会。不要相信上面的一派胡言。</p>
+这篇文章主要是记录最近对 Surge 的使用，以便后来查阅。
+</p>
+
+<div id="outline-container-org62b2942" class="outline-2">
+<h2 id="org62b2942">在移动端使用 Safari 查看知乎</h2>
+<div class="outline-text-2" id="text-org62b2942">
+<p>
+当前在移动端使用 Safari 查看知乎，只能看第一个回答，并且回答中的评论无法查看，只能使用知乎 App 查看。
+</p>
+
+<p>
+解决的办法就是使用 Mac 端的 HTTP Header 替换 iPhone 移动端的 HTTP Header。
+</p>
+
+<p>
+在（Rewrite &gt; Header 请求）中新增规则。
+</p>
+
+<blockquote>
+<p>
+模式： Replace Header
+URL 正则表达式： ^https?://www\.zhihu\.com
+字段：User-Agent
+值：Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15
+</p>
+</blockquote>
+
+<p>
+但是由于知乎使用了 https 传输数据，我们无法直接对知乎的 HTTP 请求篡改 Header。此时需要用到 Surge 的 MitM 功能。
+</p>
+
+<p>
+先在 MitM 中配置并安装根证书，然后在（设置 &gt; 通用 &gt; 关于 &gt; 证书信任） 设置中启动该证书。如果不启动该证书，你访问知乎时会提示该网页不被信任。
+</p>
+
+<p>
+此时就可以使用 Mac 端访问知乎的方式查看知乎内容了。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9874bfb" class="outline-2">
+<h2 id="org9874bfb">屏蔽移动流量球</h2>
+<div class="outline-text-2" id="text-org9874bfb">
+<p>
+使用移动 4G 访问网页的时候经常出现一个移动流量球，这是因为你访问的网页被移动劫持了。可以使用 Surge 屏蔽移动的劫持。
+</p>
+
+<p>
+移动当前只能劫持 HTTP 流量，无法劫持 HTTPS 流量。
+</p>
+
+<p>
+使用 HTTP 访问某个网页，然后在 Surge 的（分析 &gt; 最近请求）中查找该网页，注意网页地址会使用 URL Encode，你会发现该地址被放置在某个 IP 后面。通常来说这个 IP 就是移动劫持网页的 IP。
+</p>
+
+<p>
+使用 Surge 屏蔽这个 IP。
+</p>
+
+<p>
+在（代理规则）中新增规则。
+</p>
+
+<blockquote>
+<p>
+规则类型：ID_CIDR
+内容：指定IP
+策略：REJECT
+不执行 DNS 解析：true
+</p>
+</blockquote>
+</div>
+</div>
 
 </div>
 </div>
     <div>
       <div class="post-meta">
-        <span title="post date" class="post-info">2016-09-29</span>
-        <span title="last modification date" class="post-info">2016-09-29</span>
-        <span title="tags" class="post-info"><a href="/tags/microsoft/">Microsoft</a>, <a href="/tags/project-management/">Project Management</a>, <a href="/tags/cooperate/">cooperate</a></span>
+        <span title="post date" class="post-info">2018-05-16</span>
+        <span title="last modification date" class="post-info">2018-05-16</span>
+        <span title="tags" class="post-info"><a href="/tags/&lt;todo/">&lt;TODO</a>, <a href="/tags/insert-your-tags-here&gt;/">insert your tags here&gt;</a></span>
         <span title="author" class="post-info">forsil</span>
       </div>
       <section>
@@ -65,8 +127,8 @@
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           //var disqus_developer = 1;
-          var disqus_identifier = "/blog/2016/09/29/观止----微软创建-nt-和未来的夺命狂奔";
-          var disqus_url = "http://forsil.github.io/blog/2016/09/29/观止----微软创建-nt-和未来的夺命狂奔";
+          var disqus_identifier = "/blog/2018/05/16/using-surge";
+          var disqus_url = "http://forsil.github.io/blog/2018/05/16/using-surge";
           var disqus_shortname = 'forsil';
           /* * * DON'T EDIT BELOW THIS LINE * * */
           (function() {

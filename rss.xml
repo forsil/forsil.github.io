@@ -4,10 +4,38 @@
     <title>如是凡说</title>
     <link>http://forsil.github.io</link>
     <description>=====逝者如斯，上善若水=====</description>
-    <pubDate>Thu, 29 Sep 2016 22:22:03 CST</pubDate>
-    <lastBuildDate>Thu, 29 Sep 2016 22:22:03 CST</lastBuildDate>
+    <pubDate>Wed, 16 May 2018 14:35:34 CST</pubDate>
+    <lastBuildDate>Wed, 16 May 2018 14:35:34 CST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Debugging Teams</title>
+      <link>http://forsil.github.io/blog/2018/04/10/debugging-teams</link>
+      <description><![CDATA[]]></description>
+      <pubDate>2018-05-16</pubDate>
+      <guid>http://forsil.github.io/blog/2018/04/10/debugging-teams</guid>
+    </item>
+    <item>
+      <title>Surge 的使用</title>
+      <link>http://forsil.github.io/blog/2018/05/16/using-surge</link>
+      <description><![CDATA[<TODO: insert your description here>]]></description>
+      <pubDate>2018-05-16</pubDate>
+      <guid>http://forsil.github.io/blog/2018/05/16/using-surge</guid>
+    </item>
+    <item>
+      <title>Using Django-Debug-Toolbar</title>
+      <link>http://forsil.github.io/blog/2018/04/09/using-django-debug-toolbar</link>
+      <description><![CDATA[using django-debug-toolbar to debug django sql query performance.]]></description>
+      <pubDate>2018-05-16</pubDate>
+      <guid>http://forsil.github.io/blog/2018/04/09/using-django-debug-toolbar</guid>
+    </item>
+    <item>
+      <title>Computer Networks</title>
+      <link>http://forsil.github.io/blog/2016/10/02/computer-networks</link>
+      <description><![CDATA[读「计算机网络」做的笔记]]></description>
+      <pubDate>2018-05-16</pubDate>
+      <guid>http://forsil.github.io/blog/2016/10/02/computer-networks</guid>
+    </item>
     <item>
       <title>观止 -- 微软创建 NT 和未来的夺命狂奔</title>
       <link>http://forsil.github.io/blog/2016/09/29/观止----微软创建-nt-和未来的夺命狂奔</link>
@@ -17,41 +45,41 @@
     </item>
     <item>
       <title>Macbook Pro 13</title>
-      <link>http://forsil.github.io/blog/2016/09/29/macbook-pro-13/</link>
+      <link>http://forsil.github.io/blog/2018/05/16/macbook-pro-13/</link>
       <description><![CDATA[<div>
 <div class="post">
 <h1>Macbook Pro 13</h1>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1">开箱 Macbook Pro 13 (2015 early)</h2>
-<div class="outline-text-2" id="text-orgheadline1">
+<div id="outline-container-orgef5ca7b" class="outline-2">
+<h2 id="orgef5ca7b">开箱 Macbook Pro 13 (2015 early)</h2>
+<div class="outline-text-2" id="text-orgef5ca7b">
 <p>
 网上很多开箱照，我就不献丑了
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2">开机</h2>
-<div class="outline-text-2" id="text-orgheadline2">
+<div id="outline-container-org52cb23a" class="outline-2">
+<h2 id="org52cb23a">开机</h2>
+<div class="outline-text-2" id="text-org52cb23a">
 <p>
 开机之后就是安装界面，一步一步地走就行了。
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3">启动</h2>
-<div class="outline-text-2" id="text-orgheadline3">
+<div id="outline-container-org2a0b73a" class="outline-2">
+<h2 id="org2a0b73a">启动</h2>
+<div class="outline-text-2" id="text-org2a0b73a">
 <p>
 osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是坏，反正不觉得丑就行了。
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4">装软件</h2>
-<div class="outline-text-2" id="text-orgheadline4">
+<div id="outline-container-org4d45307" class="outline-2">
+<h2 id="org4d45307">装软件</h2>
+<div class="outline-text-2" id="text-org4d45307">
 <p>
 进入正题，作为一台开发机器，各种软件是必不可少的，待我细细道来：
 </p>
@@ -113,7 +141,7 @@ osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是
 </div>
 </div>]]></description>
       <pubDate>2016-09-28</pubDate>
-      <guid>http://forsil.github.io/blog/2016/09/29/macbook-pro-13/</guid>
+      <guid>http://forsil.github.io/blog/2018/05/16/macbook-pro-13/</guid>
     </item>
     <item>
       <title>给 Synology 配置 Aria2</title>
@@ -142,13 +170,6 @@ osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是
       <description><![CDATA[just a note while reading books]]></description>
       <pubDate>2014-09-03</pubDate>
       <guid>http://forsil.github.io/blog/2014/09/03/程序员修炼之道-pragmatic-programmer-/</guid>
-    </item>
-    <item>
-      <title>在龙芯2f 8089b机器上安装 Debian7</title>
-      <link>http://forsil.github.io/blog/2014/09/01/在龙芯2f-8089b机器上安装-debian7/</link>
-      <description><![CDATA[install debian7 on loongson]]></description>
-      <pubDate>2014-09-01</pubDate>
-      <guid>http://forsil.github.io/blog/2014/09/01/在龙芯2f-8089b机器上安装-debian7/</guid>
     </item>
   </channel>
 </rss>

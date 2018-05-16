@@ -37,9 +37,9 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgheadline1">1. 网络安装 Debian</a></li>
-<li><a href="#orgheadline2">2. 安装 Xfce4</a></li>
-<li><a href="#orgheadline3">3. 我额外安装的软件包</a></li>
+<li><a href="#org01ee18e">1. 网络安装 Debian</a></li>
+<li><a href="#org5670583">2. 安装 Xfce4</a></li>
+<li><a href="#org39cdfa6">3. 我额外安装的软件包</a></li>
 </ul>
 </div>
 </div>
@@ -47,8 +47,8 @@
 本篇只是对网上在龙芯 2f 上安装 debian7 系统的一个整理，更可以为了我以后重新安装 debian7 提供方便（我才不说这才是我真正的目的呢）。
 </p>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> 网络安装 Debian</h2>
+<div id="outline-container-org01ee18e" class="outline-2">
+<h2 id="org01ee18e"><span class="section-number-2">1</span> 网络安装 Debian</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 首先你得有个u盘，网上说最好不要超过2g，或者是就分配个低于2g的分区，我是直接就拿了一个2g的u盘建了 ext2 分区，然后直接就进入引导，没有网上说的需要在 PMON 上输入命令，接下来就
@@ -59,8 +59,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="section-number-2">2</span> 安装 Xfce4</h2>
+<div id="outline-container-org5670583" class="outline-2">
+<h2 id="org5670583"><span class="section-number-2">2</span> 安装 Xfce4</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 装完系统之后进入的是文本界面，我要安装一个图形界面。相比 lxde，我比较喜欢 xfce4。要安装 xfce4,
@@ -68,7 +68,6 @@
 无线的话，就有点麻烦，要先打开无线开关，然后
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">ifconfig wlan0 up
 </pre>
 </div>
@@ -76,7 +75,6 @@
 此时再输入
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">ifconfig
 </pre>
 </div>
@@ -85,7 +83,6 @@
 输入
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">iwconfig wlan0 essid "AP's SSID" key "PASSWORD" restricted
 </pre>
 </div>
@@ -93,7 +90,6 @@
 然后通过 dhcp 获取 ip
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">dhclient wlan0
 </pre>
 </div>
@@ -101,7 +97,6 @@
 此时输入
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">ifconfig
 </pre>
 </div>
@@ -110,7 +105,6 @@
 如果是 wpa/wpa2 网络的话，与 WEP 略有不同，在看到 wlan0 之后，输入（必须要保证 wpasupplicant 软件包已经安装）
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">wpa_supplicant -i wlan0 -c &lt;(wpa_passphrase essid "AP's SSID" psk "PASSWORD")
 </pre>
 </div>
@@ -118,7 +112,6 @@
 再输入
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">dhclient wlan0
 </pre>
 </div>
@@ -126,7 +119,6 @@
 搞定网络之后，开始安装 xfce4（按照贴吧的一个教程，默认用户为 root 用户）
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">apt-get install chkconfig
 chkconfig exim4 off
 chkconfig bluetooth off
@@ -138,7 +130,6 @@ apt-get install w3m-img fbterm gpm ttf-wqy-zenhei fonts-cwtex-fs xserver-xorg
 <a href="http://www.longsoner.com">loongsoner</a>。 将压缩包解压，拷贝 xorg.conf 到 /etc/X11 目录下
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">cp xorg.conf /etc/X11/
 </pre>
 </div>
@@ -146,7 +137,6 @@ apt-get install w3m-img fbterm gpm ttf-wqy-zenhei fonts-cwtex-fs xserver-xorg
 安装 xserver-xorg-video-siliconmotion_1.7.6-1loongson_mipsel.deb （建议 TAB 补全文件名）
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">dpkg -i xserver-xorg-video-siliconmotion_1.7.6-1loongson_mipsel.deb
 </pre>
 </div>
@@ -154,7 +144,6 @@ apt-get install w3m-img fbterm gpm ttf-wqy-zenhei fonts-cwtex-fs xserver-xorg
 安装 fcitx 输入法
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">apt-get install fcitx
 </pre>
 </div>
@@ -162,7 +151,6 @@ apt-get install w3m-img fbterm gpm ttf-wqy-zenhei fonts-cwtex-fs xserver-xorg
 安装 xfce4
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">apt-get install xfce4 xfce4-goodies lightdm
 </pre>
 </div>
@@ -170,7 +158,6 @@ apt-get install w3m-img fbterm gpm ttf-wqy-zenhei fonts-cwtex-fs xserver-xorg
 安装一些有用的包
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">apt-get install sudo hardinfo alsa-utils alsa-oss smplayer rekonq
 apt-get install fcitx-pinyin network-manager network-manager-gnome rfkill
 apt-get install synaptic ntpdate packagekit gnome-packagekit gnome-disk-utility
@@ -181,7 +168,6 @@ apt-get install font-manager ttf-arphic-uming ttf-arphic-ukai sensible-mda sensi
 选择一下编码环境
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">dpkg-reconfigure locales
 </pre>
 </div>
@@ -190,7 +176,6 @@ apt-get install font-manager ttf-arphic-uming ttf-arphic-ukai sensible-mda sensi
 同步时间
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">ntpdate ntp.sjtu.edu.cn &amp;&amp; hwclock --systohc --localtime
 </pre>
 </div>
@@ -198,7 +183,6 @@ apt-get install font-manager ttf-arphic-uming ttf-arphic-ukai sensible-mda sensi
 卸载一些包
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">apt-get remove pulseaudio pkg-config
 </pre>
 </div>
@@ -206,18 +190,16 @@ apt-get install font-manager ttf-arphic-uming ttf-arphic-ukai sensible-mda sensi
 重启，享受你的 debian 之旅吧！
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">reboot
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="section-number-2">3</span> 我额外安装的软件包</h2>
+<div id="outline-container-org39cdfa6" class="outline-2">
+<h2 id="org39cdfa6"><span class="section-number-2">3</span> 我额外安装的软件包</h2>
 <div class="outline-text-2" id="text-3">
 <div class="org-src-container">
-
 <pre class="src src-sh">apt-get install vim # 没什么好说的，linux 中 vim 是必须装的
 apt-get install emacs # emacs，我肯定要装的
 apt-get install git # git，版本管理软件，必装，通向 github
@@ -275,7 +257,7 @@ apt-get install cmus # 文本界面的音乐播放器
         })();
       </script>
       <div class="footer">
-        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.x (<a href="http://orgmode.org">Org mode</a> 8.x)</p>
+        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
         <p>
           Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:forsil &lt;dot&gt; 9 &lt;at&gt; gmail &lt;dot&gt; com">forsil</a>
           &nbsp;&nbsp;-&nbsp;&nbsp;
