@@ -1,0 +1,88 @@
+#+TITLE:       Using Django-Debug-Toolbar
+#+AUTHOR:      forsil
+#+EMAIL:       forsil.9@gmail.com
+#+DATE:        2018-04-09 Mon
+#+URI:         /blog/%y/%m/%d/using-django-debug-toolbar
+#+KEYWORDS:    django, django-debug-toolbar, debug
+#+TAGS:        django, debug
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: using django-debug-toolbar to debug django sql query performance.
+
+Django-Debug-Toolbar [[https://django-debug-toolbar.readthedocs.io/en/stable/][Mainpage]]
+
+* My System Configuration
+Django Version: 2.0.4
+Django-Debug-Toolbar Version: 1.9.1
+
+* install django-debug-toolbar
+Add following to the end of file settings.py of the project.
+
+#+BEGIN_SRC python
+  if settings.DEBUG:
+	  INTERNAL_IPS = [
+		  # to work in development
+		  '127.0.0.1',
+	  ]
+
+	  MIDDLEWARE += [
+		  'debug_toolbar.middleware.DebugToolbarMiddleware',
+	  ]
+
+	  INSTALLED_APPS += [
+		  'debug_toolbar',
+	  ]
+#+END_SRC
+
+Please ensure that in settings.py
+
+#+BEGIN_SRC python
+DEBUG = True
+#+END_SRC
+
+Django-Debug-Toolbar only works with the debug mode.
+
+Add following to the end of file urls.py of the project.
+
+#+BEGIN_SRC python
+  if settings.DEBUG:
+	  import debug_toolbar
+	  urlpatterns = [
+		  path(r'^__debug__/', include(debug_toolbar.urls)),
+	  ] + urlpatterns
+#+END_SRC
+
+* FAQ
+
+** 'set' object is not reversible
+When running manage.py to runserver, the error occured.
+
+Q:
+#+BEGIN_QUOTE
+debug_toolbar/base.html, error at line 16
+
+'set' object is not reversible
+#+END_QUOTE
+
+A:
+In the urls.py of app:
+#+BEGIN_SRC python
+  # Error
+  urlpatterns = {
+	  path('', views.index, name='index'),
+  }
+
+  # Right, replace {} by []
+  urlpatterns = [
+	  path('', views.index, name='index'),
+  ]
+#+END_SRC
+
+** Query spend 30s by 20w rows of data in mysql
+Q:
+#+BEGIN_QUOTE
+In Django model, I set the ordering with 'create_time'. So everytime I query the table it will order the result in 'create_time' which spent much time.
+#+END_QUOTE
+
+A:
+Create index on the ordering column.

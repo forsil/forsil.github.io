@@ -1,0 +1,10 @@
+#+TITLE:       Debugging Teams
+#+AUTHOR:      forsil
+#+EMAIL:       forsil.9@gmail.com
+#+DATE:        2018-04-10 Tue
+#+URI:         /blog/%y/%m/%d/debugging-teams
+#+KEYWORDS:    geek, team
+#+TAGS:        geek, team
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION:
