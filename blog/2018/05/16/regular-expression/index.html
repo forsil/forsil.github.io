@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Using Django-Debug-Toolbar - 如是凡说</title>
+    <title>Regular Expression - 如是凡说</title>
     <meta charset="utf-8" />
     <meta name="author" content="forsil" />
-    <meta name="description" content="using django-debug-toolbar to debug django sql query performance." />
-    <meta name="keywords" content="django, django-debug-toolbar, debug" />
+    <meta name="description" content="学习正则表达式" />
+    <meta name="keywords" content="regex, regular expression" />
     <link rel="stylesheet" href="/media/css/main.css" type="text/css">
     <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
   </head>
@@ -32,131 +32,16 @@
 
 <div>
 <div class="post">
-<h1>Using Django-Debug-Toolbar</h1>
-<p>
-Django-Debug-Toolbar <a href="https://django-debug-toolbar.readthedocs.io/en/stable/">Mainpage</a>
-</p>
+<h1>Regular Expression</h1>
 
-<div id="outline-container-orgb9527c4" class="outline-2">
-<h2 id="orgb9527c4">My System Configuration</h2>
-<div class="outline-text-2" id="text-orgb9527c4">
-<p>
-Django Version: 2.0.4
-Django-Debug-Toolbar Version: 1.9.1
-</p>
-</div>
-</div>
-
-<div id="outline-container-org435342b" class="outline-2">
-<h2 id="org435342b">install django-debug-toolbar</h2>
-<div class="outline-text-2" id="text-org435342b">
-<p>
-Add following to the end of file settings.py of the project.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-python">if settings.DEBUG:
-	INTERNAL_IPS = [
-		# to work in development
-		'127.0.0.1',
-	]
-
-	MIDDLEWARE += [
-		'debug_toolbar.middleware.DebugToolbarMiddleware',
-	]
-
-	INSTALLED_APPS += [
-		'debug_toolbar',
-	]
-</pre>
-</div>
-
-<p>
-Please ensure that in settings.py
-</p>
-
-<div class="org-src-container">
-<pre class="src src-python">DEBUG = True
-</pre>
-</div>
-
-<p>
-Django-Debug-Toolbar only works with the debug mode.
-</p>
-
-<p>
-Add following to the end of file urls.py of the project.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-python">if settings.DEBUG:
-	import debug_toolbar
-	urlpatterns = [
-		path(r'^__debug__/', include(debug_toolbar.urls)),
-	] + urlpatterns
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org9f06d9b" class="outline-2">
-<h2 id="org9f06d9b">FAQ</h2>
-<div class="outline-text-2" id="text-org9f06d9b">
-</div><div id="outline-container-orge5db1ba" class="outline-3">
-<h3 id="orge5db1ba">'set' object is not reversible</h3>
-<div class="outline-text-3" id="text-orge5db1ba">
-<p>
-When running manage.py to runserver, the error occured.
-</p>
-
-<p>
-Q:
-</p>
-<blockquote>
-<p>
-debug_toolbar/base.html, error at line 16
-</p>
-
-<p>
-'set' object is not reversible
-</p>
-</blockquote>
-
-<p>
-A:
-In the urls.py of app:
-</p>
-<div class="org-src-container">
-<pre class="src src-python"># Error
-urlpatterns = {
-	path('', views.index, name='index'),
-}
-
-# Right, replace {} by []
-urlpatterns = [
-	path('', views.index, name='index'),
-]
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org8cbe47f" class="outline-3">
-<h3 id="org8cbe47f">Query spend 30s by 20w rows of data in mysql</h3>
-<div class="outline-text-3" id="text-org8cbe47f">
-<p>
-Q:
-</p>
-<blockquote>
-<p>
-In Django model, I set the ordering with 'create_time'. So everytime I query the table it will order the result in 'create_time' which spent much time.
-</p>
-</blockquote>
-
-<p>
-A:
-Create index on the ordering column.</p>
-</div>
+<div id="outline-container-org4c75805" class="outline-2">
+<h2 id="org4c75805">字符组 Character Classes 「[···]」</h2>
+<div class="outline-text-2" id="text-org4c75805">
+<ul class="org-ul">
+<li>字符组 「[···]」 内， '-' 连字符是元字符，且只有在字符组内。如果 '-' 在字符组开头，仍然只表示 '-' 普通字符。</li>
+<li>'?', '.' 在字符组内都只表示普通字符。</li>
+<li>「[^···]」 表示匹配未列出的字符，'^' 在字符组中第一个位置表示排除，在字符组外表示行锚点(line anchor)。</li>
+</ul>
 </div>
 </div>
 
@@ -164,9 +49,9 @@ Create index on the ordering column.</p>
 </div>
     <div>
       <div class="post-meta">
-        <span title="post date" class="post-info">2018-04-09</span>
-        <span title="last modification date" class="post-info">2018-05-16</span>
-        <span title="tags" class="post-info"><a href="/tags/django/">django</a>, <a href="/tags/debug/">debug</a></span>
+        <span title="post date" class="post-info">2018-05-16</span>
+        <span title="last modification date" class="post-info">2019-11-02</span>
+        <span title="tags" class="post-info"><a href="/tags/regex/">regex</a></span>
         <span title="author" class="post-info">forsil</span>
       </div>
       <section>
@@ -174,8 +59,8 @@ Create index on the ordering column.</p>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           //var disqus_developer = 1;
-          var disqus_identifier = "/blog/2018/04/09/using-django-debug-toolbar";
-          var disqus_url = "http://forsil.github.io/blog/2018/04/09/using-django-debug-toolbar";
+          var disqus_identifier = "/blog/2018/05/16/regular-expression";
+          var disqus_url = "http://forsil.github.io/blog/2018/05/16/regular-expression";
           var disqus_shortname = 'forsil';
           /* * * DON'T EDIT BELOW THIS LINE * * */
           (function() {
