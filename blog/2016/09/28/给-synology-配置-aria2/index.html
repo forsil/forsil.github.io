@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <title>给 Synology 配置 Aria2 - 如是凡说</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="forsil" />
-    <meta name="description" content="在 DSM 系统中通过 docker 添加 aria2 支持" />
-    <meta name="keywords" content="Synology, aria2, webui, docker" />
-    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
-    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
-  </head>
+<head>
+  <title>给 Synology 配置 Aria2 - 如是凡说</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="forsil" />
+  <meta name="description" content="在 DSM 系统中通过 docker 添加 aria2 支持" />
+  <meta name="keywords" content="Synology, aria2, webui, docker" />
+
+  <link rel="alternate" title="RSS Feed" href="/rss.xml" type="application/rss+xml">
+  <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+  <link rel="stylesheet" href="/media/css/posts.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+
   <body class="container">
-    <div>
-      <header class="masthead">
-        <h1 class="masthead-title"><a href="/">如是凡说</a></h1>
-        <p>=====逝者如斯，上善若水=====</p>
-        <ul>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/read/">Read</a></li>
-          <li><a href="/wiki/">Wiki</a></li>
-          <li><a href="/tags/">Tags</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="http://github.com/forsil">GitHub</a></li>
-          <li><a href="/rss.xml">RSS</a></li>
-        </ul>
-        <form method="get" id="searchform" action="//www.google.com/search">
-          <input type="text" class="field" name="q" id="s" placeholder="Search">
-          <input type="hidden" name="as_sitesearch" value="forsil.github.io">
-        </form>
-      </header>
-    </div>
+<header id="header">
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" style="opacity: .9" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">如是凡说</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="/blog/">Blog</a></li>
+                            <li class="active"><a href="/read/">Read</a></li>
+                            <li class="active"><a href="/wiki/">Wiki</a></li>
+                        <li><a href="/tags/">Tags</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="http://github.com/forsil">GitHub</a></li>
+                        <li><a href="/rss.xml">RSS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </body>
+</header>
 
-<div>
-<div class="post">
-<h1>给 Synology 配置 Aria2</h1>
-
-<div id="outline-container-org65b74ff" class="outline-2">
-<h2 id="org65b74ff">安装 Docker</h2>
-<div class="outline-text-2" id="text-org65b74ff">
+<section id="content" role="main">
+    <div id="outline-container-sec-" class="row" style="padding-top: 70px">
+        <div class="col-md-2"></div>
+            <h1>给 Synology 配置 Aria2</h1>
+            
+<div id="outline-container-orgafac336" class="outline-2">
+<h2 id="orgafac336">安装 Docker</h2>
+<div class="outline-text-2" id="text-orgafac336">
 <p>
 如果下载速度慢，可以挂个 http 代理。
 操作面板-&gt;网络-&gt;代理服务器
@@ -44,18 +60,18 @@
 </div>
 </div>
 
-<div id="outline-container-orgc144eb4" class="outline-2">
-<h2 id="orgc144eb4">安装包含 aria2 和 webui 的 Docker 镜像</h2>
-<div class="outline-text-2" id="text-orgc144eb4">
+<div id="outline-container-orgf7f95d7" class="outline-2">
+<h2 id="orgf7f95d7">安装包含 aria2 和 webui 的 Docker 镜像</h2>
+<div class="outline-text-2" id="text-orgf7f95d7">
 <p>
 我用的是 joshua7v/webui-aria2，该镜像既包含了 aria2，也包含了 webui。
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgd864041" class="outline-2">
-<h2 id="orgd864041">做端口映射</h2>
-<div class="outline-text-2" id="text-orgd864041">
+<div id="outline-container-org7894231" class="outline-2">
+<h2 id="org7894231">做端口映射</h2>
+<div class="outline-text-2" id="text-org7894231">
 <p>
 6800:6800
 10080:8080
@@ -63,9 +79,9 @@
 </div>
 </div>
 
-<div id="outline-container-org1e6ee3c" class="outline-2">
-<h2 id="org1e6ee3c">启动镜像，修改 Procfile</h2>
-<div class="outline-text-2" id="text-org1e6ee3c">
+<div id="outline-container-orgc3697ec" class="outline-2">
+<h2 id="orgc3697ec">启动镜像，修改 Procfile</h2>
+<div class="outline-text-2" id="text-orgc3697ec">
 <p>
 Procfile 中记录了开机启动的代码。
 </p>
@@ -95,9 +111,9 @@ backend: gosu dummy /usr/bin/aria2c --enable-rpc --rpc-listen-all --rpc-allow-or
 </div>
 </div>
 
-<div id="outline-container-org57bc2e3" class="outline-2">
-<h2 id="org57bc2e3">检验结果</h2>
-<div class="outline-text-2" id="text-org57bc2e3">
+<div id="outline-container-orga02634f" class="outline-2">
+<h2 id="orga02634f">检验结果</h2>
+<div class="outline-text-2" id="text-orga02634f">
 <p>
 打开 &lt;synology ip/domain :10080&gt;，然后看看能不能下载。如果碰到不能下载，提示是无法创建文件的错误，原因可能是下载文件夹的权限不够，可以使用一下命令修改文件夹权限：
 </p>
@@ -108,66 +124,34 @@ backend: gosu dummy /usr/bin/aria2c --enable-rpc --rpc-listen-all --rpc-allow-or
 </div>
 </div>
 
-<div id="outline-container-orgfabf24b" class="outline-2">
-<h2 id="orgfabf24b">参考链接</h2>
-<div class="outline-text-2" id="text-orgfabf24b">
+<div id="outline-container-org0ea899c" class="outline-2">
+<h2 id="org0ea899c">参考链接</h2>
+<div class="outline-text-2" id="text-org0ea899c">
 <p>
 <a href="http://blog.binux.me/2012/12/aria2-examples">aria2配置示例 -- by Binuxの杂货铺</a>
 </p>
 </div>
 </div>
 
-</div>
-</div>
-    <div>
-      <div class="post-meta">
+    </div>
+</section>
+
+
+    <div class="post-meta">
         <span title="post date" class="post-info">2016-09-28</span>
         <span title="last modification date" class="post-info">2016-09-28</span>
         <span title="tags" class="post-info"><a href="/tags/synology/">Synology</a>, <a href="/tags/aria2/">aria2</a>, <a href="/tags/webui/">webui</a>, <a href="/tags/docker/">docker</a></span>
         <span title="author" class="post-info">forsil</span>
-      </div>
-      <section>
-        <h1>Comments</h1>
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-          //var disqus_developer = 1;
-          var disqus_identifier = "/blog/2016/09/28/给-synology-配置-aria2";
-          var disqus_url = "http://forsil.github.io/blog/2016/09/28/给-synology-配置-aria2";
-          var disqus_shortname = 'forsil';
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-      </section>
-      <script src="//code.jquery.com/jquery-latest.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
-      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-      <script src="/media/js/main.js"></script>
-      <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-84875940-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-      </script>
-      <div class="footer">
-        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
-        <p>
-          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:forsil &lt;dot&gt; 9 &lt;at&gt; gmail &lt;dot&gt; com">forsil</a>
-          &nbsp;&nbsp;-&nbsp;&nbsp;
-          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
-          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
-        </p>
-      </div>
     </div>
+<footer class="footer">
+    <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
+    <p>
+        Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:forsil &lt;dot&gt; 9 &lt;at&gt; gmail &lt;dot&gt; com">forsil</a>
+        &nbsp;&nbsp;-&nbsp;&nbsp;
+        Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+        <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+    </p>
+</footer>
 
   </body>
 </html>

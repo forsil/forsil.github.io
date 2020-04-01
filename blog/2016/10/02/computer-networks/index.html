@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <title>Computer Networks - 如是凡说</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="forsil" />
-    <meta name="description" content="读「计算机网络」做的笔记" />
-    <meta name="keywords" content="Computer, Network, OSI" />
-    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
-    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
-  </head>
+<head>
+  <title>Computer Networks - 如是凡说</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="forsil" />
+  <meta name="description" content="读「计算机网络」做的笔记" />
+  <meta name="keywords" content="Computer, Network, OSI" />
+
+  <link rel="alternate" title="RSS Feed" href="/rss.xml" type="application/rss+xml">
+  <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+  <link rel="stylesheet" href="/media/css/posts.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+
   <body class="container">
-    <div>
-      <header class="masthead">
-        <h1 class="masthead-title"><a href="/">如是凡说</a></h1>
-        <p>=====逝者如斯，上善若水=====</p>
-        <ul>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/read/">Read</a></li>
-          <li><a href="/wiki/">Wiki</a></li>
-          <li><a href="/tags/">Tags</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="http://github.com/forsil">GitHub</a></li>
-          <li><a href="/rss.xml">RSS</a></li>
-        </ul>
-        <form method="get" id="searchform" action="//www.google.com/search">
-          <input type="text" class="field" name="q" id="s" placeholder="Search">
-          <input type="hidden" name="as_sitesearch" value="forsil.github.io">
-        </form>
-      </header>
-    </div>
+<header id="header">
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" style="opacity: .9" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">如是凡说</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="/blog/">Blog</a></li>
+                            <li class="active"><a href="/read/">Read</a></li>
+                            <li class="active"><a href="/wiki/">Wiki</a></li>
+                        <li><a href="/tags/">Tags</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="http://github.com/forsil">GitHub</a></li>
+                        <li><a href="/rss.xml">RSS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </body>
+</header>
 
-<div>
-<div class="post">
-<h1>Computer Networks</h1>
-
-<div id="outline-container-orgd6fa1e3" class="outline-2">
-<h2 id="orgd6fa1e3">第一章笔记</h2>
-<div class="outline-text-2" id="text-orgd6fa1e3">
-</div><div id="outline-container-orgab35de2" class="outline-3">
-<h3 id="orgab35de2">OSI 模型</h3>
-<div class="outline-text-3" id="text-orgab35de2">
+<section id="content" role="main">
+    <div id="outline-container-sec-" class="row" style="padding-top: 70px">
+        <div class="col-md-2"></div>
+            <h1>Computer Networks</h1>
+            
+<div id="outline-container-orgfe1bf2c" class="outline-2">
+<h2 id="orgfe1bf2c">第一章笔记</h2>
+<div class="outline-text-2" id="text-orgfe1bf2c">
+</div><div id="outline-container-orgd84a0b6" class="outline-3">
+<h3 id="orgd84a0b6">OSI 模型</h3>
+<div class="outline-text-3" id="text-orgd84a0b6">
 <p>
 OSI 模型（Open Systems Interconnection）共分7层：
 </p>
@@ -56,9 +72,9 @@ OSI 模型（Open Systems Interconnection）共分7层：
 </div>
 </div>
 
-<div id="outline-container-org4122bae" class="outline-3">
-<h3 id="org4122bae">TCP/IP 模型</h3>
-<div class="outline-text-3" id="text-org4122bae">
+<div id="outline-container-org16597cf" class="outline-3">
+<h3 id="org16597cf">TCP/IP 模型</h3>
+<div class="outline-text-3" id="text-org16597cf">
 <p>
 TCP/IP 模型（Transmission Control Protocol/Internet Protocol）共分4层：
 </p>
@@ -73,57 +89,25 @@ TCP/IP 模型（Transmission Control Protocol/Internet Protocol）共分4层：
 </div>
 </div>
 
-</div>
-</div>
-    <div>
-      <div class="post-meta">
+    </div>
+</section>
+
+
+    <div class="post-meta">
         <span title="post date" class="post-info">2016-10-02</span>
         <span title="last modification date" class="post-info">2018-05-16</span>
         <span title="tags" class="post-info"><a href="/tags/computer/">Computer</a>, <a href="/tags/networks/">Networks</a></span>
         <span title="author" class="post-info">forsil</span>
-      </div>
-      <section>
-        <h1>Comments</h1>
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-          //var disqus_developer = 1;
-          var disqus_identifier = "/blog/2016/10/02/computer-networks";
-          var disqus_url = "http://forsil.github.io/blog/2016/10/02/computer-networks";
-          var disqus_shortname = 'forsil';
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-      </section>
-      <script src="//code.jquery.com/jquery-latest.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
-      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-      <script src="/media/js/main.js"></script>
-      <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-84875940-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-      </script>
-      <div class="footer">
-        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
-        <p>
-          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:forsil &lt;dot&gt; 9 &lt;at&gt; gmail &lt;dot&gt; com">forsil</a>
-          &nbsp;&nbsp;-&nbsp;&nbsp;
-          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
-          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
-        </p>
-      </div>
     </div>
+<footer class="footer">
+    <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
+    <p>
+        Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:forsil &lt;dot&gt; 9 &lt;at&gt; gmail &lt;dot&gt; com">forsil</a>
+        &nbsp;&nbsp;-&nbsp;&nbsp;
+        Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+        <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+    </p>
+</footer>
 
   </body>
 </html>
