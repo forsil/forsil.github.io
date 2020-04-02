@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <title>Surge 的使用 - 如是凡说</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="forsil" />
-    <meta name="description" content="Surge 的使用" />
-    <meta name="keywords" content="Surge" />
-    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
-    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
-  </head>
-  <body class="container">
-    <div>
-      <header class="masthead">
-        <h1 class="masthead-title"><a href="/">如是凡说</a></h1>
-        <p>=====逝者如斯，上善若水=====</p>
-        <ul>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/read/">Read</a></li>
-          <li><a href="/tags/">Tags</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="http://github.com/forsil">GitHub</a></li>
-          <li><a href="/rss.xml">RSS</a></li>
-        </ul>
-        <form method="get" id="searchform" action="//www.google.com/search">
-          <input type="text" class="field" name="q" id="s" placeholder="Search">
-          <input type="hidden" name="as_sitesearch" value="forsil.github.io">
-        </form>
-      </header>
-    </div>
+<head>
+  <title>Surge 的使用 - 如是凡说</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="forsil" />
+  <meta name="description" content="Surge 的使用" />
+  <meta name="keywords" content="Surge" />
 
-<div>
-<div class="post">
-<h1>Surge 的使用</h1>
-<p>
+  <link rel="alternate" title="RSS Feed" href="/rss.xml" type="application/rss+xml">
+  <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+  <link rel="stylesheet" href="/media/css/posts.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+
+  <body class="container">
+<header id="header">
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" style="opacity: .9" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">如是凡说</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="/blog/">Blog</a></li>
+                            <li class="active"><a href="/read/">Read</a></li>
+                        <li><a href="/tags/">Tags</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="http://github.com/forsil">GitHub</a></li>
+                        <li><a href="/rss.xml">RSS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </body>
+</header>
+
+<section id="content" role="main">
+    <div id="outline-container-sec-" class="row" style="padding-top: 70px">
+        <div class="col-md-2"></div>
+            <h1>Surge 的使用</h1>
+            <p>
 Surge 的功能有很多，具体可查看 Yachen Liu 的 <a href="https://manual.nssurge.com">Surge Manual</a>。
 </p>
 
@@ -40,9 +56,9 @@ Surge 的功能有很多，具体可查看 Yachen Liu 的 <a href="https://manua
 这篇文章主要是记录最近对 Surge 的使用，以便后来查阅。
 </p>
 
-<div id="outline-container-orgf868a7d" class="outline-2">
-<h2 id="orgf868a7d">在移动端使用 Safari 查看知乎</h2>
-<div class="outline-text-2" id="text-orgf868a7d">
+<div id="outline-container-org21bc6de" class="outline-2">
+<h2 id="org21bc6de">在移动端使用 Safari 查看知乎</h2>
+<div class="outline-text-2" id="text-org21bc6de">
 <p>
 当前在移动端使用 Safari 查看知乎，只能看第一个回答，并且回答中的评论无法查看，只能使用知乎 App 查看。
 </p>
@@ -87,9 +103,9 @@ URL 正则表达式： ^https?://www\.zhihu\.com
 </div>
 </div>
 
-<div id="outline-container-orgbff6d76" class="outline-2">
-<h2 id="orgbff6d76">屏蔽移动流量球</h2>
-<div class="outline-text-2" id="text-orgbff6d76">
+<div id="outline-container-orgaf9ed29" class="outline-2">
+<h2 id="orgaf9ed29">屏蔽移动流量球</h2>
+<div class="outline-text-2" id="text-orgaf9ed29">
 <p>
 使用移动 4G 访问网页的时候经常出现一个移动流量球，这是因为你访问的网页被移动劫持了。可以使用 Surge 屏蔽移动的劫持。
 </p>
@@ -130,57 +146,25 @@ URL 正则表达式： ^https?://www\.zhihu\.com
 </div>
 </div>
 
-</div>
-</div>
-    <div>
-      <div class="post-meta">
+    </div>
+</section>
+
+
+    <div class="post-meta">
         <span title="post date" class="post-info">2018-05-16</span>
         <span title="last modification date" class="post-info">2020-04-02</span>
         <span title="tags" class="post-info"><a href="/tags/surge/">Surge</a></span>
         <span title="author" class="post-info">forsil</span>
-      </div>
-      <section>
-        <h1>Comments</h1>
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-          //var disqus_developer = 1;
-          var disqus_identifier = "/blog/2018/05/16/using-surge";
-          var disqus_url = "http://forsil.github.io/blog/2018/05/16/using-surge";
-          var disqus_shortname = 'forsil';
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-      </section>
-      <script src="//code.jquery.com/jquery-latest.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
-      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-      <script src="/media/js/main.js"></script>
-      <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-84875940-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-      </script>
-      <div class="footer">
-        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
-        <p>
-          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:forsil &lt;dot&gt; 9 &lt;at&gt; gmail &lt;dot&gt; com">forsil</a>
-          &nbsp;&nbsp;-&nbsp;&nbsp;
-          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
-          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
-        </p>
-      </div>
     </div>
+<footer class="footer">
+    <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
+    <p>
+        Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:forsil &lt;dot&gt; 9 &lt;at&gt; gmail &lt;dot&gt; com">forsil</a>
+        &nbsp;&nbsp;-&nbsp;&nbsp;
+        Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+        <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+    </p>
+</footer>
 
   </body>
 </html>
