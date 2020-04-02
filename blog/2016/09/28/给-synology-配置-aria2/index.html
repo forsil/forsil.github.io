@@ -33,9 +33,9 @@
 <div class="post">
 <h1>给 Synology 配置 Aria2</h1>
 
-<div id="outline-container-orgfdbe3d6" class="outline-2">
-<h2 id="orgfdbe3d6">安装 Docker</h2>
-<div class="outline-text-2" id="text-orgfdbe3d6">
+<div id="outline-container-orga35dd62" class="outline-2">
+<h2 id="orga35dd62">安装 Docker</h2>
+<div class="outline-text-2" id="text-orga35dd62">
 <p>
 如果下载速度慢，可以挂个 http 代理。
 操作面板-&gt;网络-&gt;代理服务器
@@ -43,18 +43,18 @@
 </div>
 </div>
 
-<div id="outline-container-org6d46eca" class="outline-2">
-<h2 id="org6d46eca">安装包含 aria2 和 webui 的 Docker 镜像</h2>
-<div class="outline-text-2" id="text-org6d46eca">
+<div id="outline-container-org680257b" class="outline-2">
+<h2 id="org680257b">安装包含 aria2 和 webui 的 Docker 镜像</h2>
+<div class="outline-text-2" id="text-org680257b">
 <p>
 我用的是 joshua7v/webui-aria2，该镜像既包含了 aria2，也包含了 webui。
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgcc79e19" class="outline-2">
-<h2 id="orgcc79e19">做端口映射</h2>
-<div class="outline-text-2" id="text-orgcc79e19">
+<div id="outline-container-org32ffb59" class="outline-2">
+<h2 id="org32ffb59">做端口映射</h2>
+<div class="outline-text-2" id="text-org32ffb59">
 <p>
 6800:6800
 10080:8080
@@ -62,9 +62,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgec92334" class="outline-2">
-<h2 id="orgec92334">启动镜像，修改 Procfile</h2>
-<div class="outline-text-2" id="text-orgec92334">
+<div id="outline-container-org5e74096" class="outline-2">
+<h2 id="org5e74096">启动镜像，修改 Procfile</h2>
+<div class="outline-text-2" id="text-org5e74096">
 <p>
 Procfile 中记录了开机启动的代码。
 </p>
@@ -94,9 +94,9 @@ backend: gosu dummy /usr/bin/aria2c --enable-rpc --rpc-listen-all --rpc-allow-or
 </div>
 </div>
 
-<div id="outline-container-org3a11d3d" class="outline-2">
-<h2 id="org3a11d3d">检验结果</h2>
-<div class="outline-text-2" id="text-org3a11d3d">
+<div id="outline-container-org5c63c81" class="outline-2">
+<h2 id="org5c63c81">检验结果</h2>
+<div class="outline-text-2" id="text-org5c63c81">
 <p>
 打开 &lt;synology ip/domain :10080&gt;，然后看看能不能下载。如果碰到不能下载，提示是无法创建文件的错误，原因可能是下载文件夹的权限不够，可以使用一下命令修改文件夹权限：
 </p>
@@ -107,9 +107,9 @@ backend: gosu dummy /usr/bin/aria2c --enable-rpc --rpc-listen-all --rpc-allow-or
 </div>
 </div>
 
-<div id="outline-container-orgf5d8bbc" class="outline-2">
-<h2 id="orgf5d8bbc">参考链接</h2>
-<div class="outline-text-2" id="text-orgf5d8bbc">
+<div id="outline-container-org1d62efd" class="outline-2">
+<h2 id="org1d62efd">参考链接</h2>
+<div class="outline-text-2" id="text-org1d62efd">
 <p>
 <a href="http://blog.binux.me/2012/12/aria2-examples">aria2配置示例 -- by Binuxの杂货铺</a>
 </p>
