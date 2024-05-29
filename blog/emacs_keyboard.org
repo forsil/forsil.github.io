@@ -2,7 +2,7 @@
 #+AUTHOR:      forsil
 #+EMAIL:       forsil.9@gmail.com
 #+DATE:        2015-08-20 Thu
-#+URI:         /wiki/emacs-keyboard
+#+URI:         /blog/emacs-keyboard
 #+KEYWORDS:    Emacs, keyboard
 #+TAGS:        Emacs
 #+LANGUAGE:    en
@@ -13,16 +13,16 @@
 * 命令
   - C-x C-z :: 挂起程序
   - C-c C-x :: 退出程序
-  - C-c k :: 关闭buffer
+  - C-c k :: 关闭 buffer
   - C-l :: 重画屏幕
-  - C-g :: 结束命令，或者假死中恢复，也可以按3次ESC
+  - C-g :: 结束命令，或者假死中恢复，也可以按 3 次 ESC
 
 * 文件
   - C-x C-s :: 保存
   - C-x C-w :: 另存为
   - C-x C-f :: 打开文件
   - C-x C-r :: 只读方式打开
-  - C-x C-v :: 读入另外一个文件代替当前buffer的文件
+  - C-x C-v :: 读入另外一个文件代替当前 buffer 的文件
   - C-x s :: 保存所有
   - C-x i :: 将文件的内容插入
   - M-x revert-buffer :: 恢复到原始状态
@@ -37,7 +37,7 @@
   - C-p/n :: 行间
   - M-{/} :: 段落
   - C-x ]/[ :: 页
-  - C-x C-x :: 文件内，mark之间
+  - C-x C-x :: 文件内，mark 之间
 
   - M-g g :: 跳到指定行
   - M-x goto-char :: 跳到指定字符
@@ -48,9 +48,9 @@
   - M-l :: 后面单词变为小写
   - M-c :: 后面单词的首字母变大写
   - M-/ :: 补全
-  - C-j :: 从当前位置分成两行,相当于RET + tab
+  - C-j :: 从当前位置分成两行,相当于 RET + tab
   - M-( :: 插入()
-  - C-q tab ::  插入tab
+  - C-q tab ::  插入 tab
   - C-q C-m ::  插入^M
   - M-; :: 插入注释
   - C-o :: 回车
@@ -94,13 +94,13 @@
   - M-x indent-region
 
 * 其他命令
-  - C-u <数字> <命令> :: 重复命令n次
+  - C-u <数字> <命令> :: 重复命令 n 次
   - M-<数字>   <命令> :: 同上
-  - M-! :: 运行shell命令
+  - M-! :: 运行 shell 命令
   - C-u M-! :: 执行一条外部命令，并输出到光标位置
   - M-x cd :: 改变工作目录
   - M-x pwd :: 当前工作目录
-  - M-x eval-buffer :: 在.emacs的buffer中运行，重新加载emacs配置
+  - M-x eval-buffer :: 在.emacs 的 buffer 中运行，重新加载 emacs 配置
 
 * 查找替换
   - C-r :: 向上查找
@@ -130,7 +130,7 @@
   - C-x o :: 切换窗口
   - C-x 2 :: 水平两分窗口
   - C-x 3 :: 垂直两分窗口
-  - C-x 5 2 :: 新frame
+  - C-x 5 2 :: 新 frame
 
 * buffer
   - C-x C-b :: 查看
@@ -148,15 +148,15 @@
   - C-x h :: 全部选择
 
 * 普通区块
-  - C-SPC ::  单个位置set mark
+  - C-SPC ::  单个位置 set mark
   - M-x set-mark-command :: 同上
   - C-@ :: 同上
-  - M-@ :: 对word进行set Mark
-  - M-w :: 先set Mark，移到光标，M-w就可以复制
+  - M-@ :: 对 word 进行 set Mark
+  - M-w :: 先 set Mark，移到光标，M-w 就可以复制
   - C-w :: 剪切
 
 * 矩形区块
-  用这些快捷键要先关闭cua-mode
+  用这些快捷键要先关闭 cua-mode
   - C-x r t :: 用串填充矩形区域
   - C-x r o :: 插入空白的矩形区域
   - C-x r y :: 插入之前删除的矩形区域, 粘贴时，矩形左上角对齐光标
@@ -202,8 +202,8 @@
 	- ? :: 简单帮助
 
 * 帮助
-  - C-h k :: 显示你将按下的键执行的function.
-  - C-h f :: 列出function的功能说明。
+  - C-h k :: 显示你将按下的键执行的 function.
+  - C-h f :: 列出 function 的功能说明。
   - C-h b :: 列出目前所有的快捷键。
-  - C-h m :: 列出目前的mode的特殊说明.
+  - C-h m :: 列出目前的 mode 的特殊说明.
   - C-c C-h :: 列出以C-c 开头的所有快捷键.
