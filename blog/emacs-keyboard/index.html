@@ -1,62 +1,78 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <title>Emacs Keyboard - 如是凡说</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="forsil" />
-    <meta name="description" content="emacs 命令速查，转抄自[[http://www.cnblogs.com/Henrya2/archive/2009/02/21/1395615.html]]" />
-    <meta name="keywords" content="Emacs, keyboard" />
-    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
-    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
-  </head>
-  <body class="container">
-    <div>
-      <header class="masthead">
-        <h1 class="masthead-title"><a href="/">如是凡说</a></h1>
-        <p>=====逝者如斯，上善若水=====</p>
-        <ul>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/read/">Read</a></li>
-          <li><a href="/tags/">Tags</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="http://github.com/forsil">GitHub</a></li>
-          <li><a href="/rss.xml">RSS</a></li>
-        </ul>
-        <form method="get" id="searchform" action="//www.google.com/search">
-          <input type="text" class="field" name="q" id="s" placeholder="Search">
-          <input type="hidden" name="as_sitesearch" value="forsil.github.io">
-        </form>
-      </header>
-    </div>
+<head>
+  <title>Emacs Keyboard - 如是凡说</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="forsil" />
+  <meta name="description" content="emacs 命令速查，转抄自[[http://www.cnblogs.com/Henrya2/archive/2009/02/21/1395615.html]]" />
+  <meta name="keywords" content="Emacs, keyboard" />
 
-<div>
-<div class="post">
-<h1>Emacs Keyboard</h1>
-<p>
+  <link rel="alternate" title="RSS Feed" href="/rss.xml" type="application/rss+xml">
+  <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+  <link rel="stylesheet" href="/media/css/posts.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+
+  <body class="container">
+<header id="header">
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" style="opacity: .9" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">如是凡说</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="/read/">Read</a></li>
+                            <li class="active"><a href="/blog/">Blog</a></li>
+                        <li><a href="/tags/">Tags</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="http://github.com/forsil">GitHub</a></li>
+                        <li><a href="/rss.xml">RSS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </body>
+</header>
+
+<section id="content" role="main">
+    <div id="outline-container-sec-" class="row" style="padding-top: 70px">
+        <div class="col-md-2"></div>
+            <h1>Emacs Keyboard</h1>
+            <p>
 转抄自<a href="http://www.cnblogs.com/henrya2/archive/2009/02/21/1395615.html">Emacs命令速查</a>
 </p>
-<div id="outline-container-org2f1f365" class="outline-2">
-<h2 id="org2f1f365">命令</h2>
-<div class="outline-text-2" id="text-org2f1f365">
+<div id="outline-container-orgb4597a5" class="outline-2">
+<h2 id="orgb4597a5">命令</h2>
+<div class="outline-text-2" id="text-orgb4597a5">
 <dl class="org-dl">
 <dt>C-x C-z</dt><dd>挂起程序</dd>
 <dt>C-c C-x</dt><dd>退出程序</dd>
-<dt>C-c k</dt><dd>关闭buffer</dd>
+<dt>C-c k</dt><dd>关闭 buffer</dd>
 <dt>C-l</dt><dd>重画屏幕</dd>
-<dt>C-g</dt><dd>结束命令，或者假死中恢复，也可以按3次ESC</dd>
+<dt>C-g</dt><dd>结束命令，或者假死中恢复，也可以按 3 次 ESC</dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-org4aca485" class="outline-2">
-<h2 id="org4aca485">文件</h2>
-<div class="outline-text-2" id="text-org4aca485">
+<div id="outline-container-orgde3de84" class="outline-2">
+<h2 id="orgde3de84">文件</h2>
+<div class="outline-text-2" id="text-orgde3de84">
 <dl class="org-dl">
 <dt>C-x C-s</dt><dd>保存</dd>
 <dt>C-x C-w</dt><dd>另存为</dd>
 <dt>C-x C-f</dt><dd>打开文件</dd>
 <dt>C-x C-r</dt><dd>只读方式打开</dd>
-<dt>C-x C-v</dt><dd>读入另外一个文件代替当前buffer的文件</dd>
+<dt>C-x C-v</dt><dd>读入另外一个文件代替当前 buffer 的文件</dd>
 <dt>C-x s</dt><dd>保存所有</dd>
 <dt>C-x i</dt><dd>将文件的内容插入</dd>
 <dt>M-x revert-buffer</dt><dd>恢复到原始状态</dd>
@@ -64,9 +80,9 @@
 </div>
 </div>
 
-<div id="outline-container-org2de7ce5" class="outline-2">
-<h2 id="org2de7ce5">跳转</h2>
-<div class="outline-text-2" id="text-org2de7ce5">
+<div id="outline-container-org6938116" class="outline-2">
+<h2 id="org6938116">跳转</h2>
+<div class="outline-text-2" id="text-org6938116">
 <dl class="org-dl">
 <dt>前/后</dt><dd>单位</dd>
 <dt>C-f/b</dt><dd>字</dd>
@@ -77,7 +93,7 @@
 <dt>C-p/n</dt><dd>行间</dd>
 <dt>M-{/}</dt><dd>段落</dd>
 <dt>C-x ]/[</dt><dd>页</dd>
-<dt>C-x C-x</dt><dd>文件内，mark之间</dd>
+<dt>C-x C-x</dt><dd>文件内，mark 之间</dd>
 
 <dt>M-g g</dt><dd>跳到指定行</dd>
 <dt>M-x goto-char</dt><dd>跳到指定字符</dd>
@@ -86,17 +102,17 @@
 </div>
 </div>
 
-<div id="outline-container-org87c897b" class="outline-2">
-<h2 id="org87c897b">编辑</h2>
-<div class="outline-text-2" id="text-org87c897b">
+<div id="outline-container-org103041c" class="outline-2">
+<h2 id="org103041c">编辑</h2>
+<div class="outline-text-2" id="text-org103041c">
 <dl class="org-dl">
 <dt>M-u</dt><dd>后面单词变为大写</dd>
 <dt>M-l</dt><dd>后面单词变为小写</dd>
 <dt>M-c</dt><dd>后面单词的首字母变大写</dd>
 <dt>M-/</dt><dd>补全</dd>
-<dt>C-j</dt><dd>从当前位置分成两行,相当于RET + tab</dd>
+<dt>C-j</dt><dd>从当前位置分成两行,相当于 RET + tab</dd>
 <dt>M-(</dt><dd>插入()</dd>
-<dt>C-q tab</dt><dd>插入tab</dd>
+<dt>C-q tab</dt><dd>插入 tab</dd>
 <dt>C-q C-m</dt><dd>插入^M</dd>
 <dt>M-;</dt><dd>插入注释</dd>
 <dt>C-o</dt><dd>回车</dd>
@@ -104,15 +120,15 @@
 </div>
 </div>
 
-<div id="outline-container-orgddb4efd" class="outline-2">
-<h2 id="orgddb4efd">删除</h2>
-<div class="outline-text-2" id="text-orgddb4efd">
+<div id="outline-container-org5c4c3f7" class="outline-2">
+<h2 id="org5c4c3f7">删除</h2>
+<div class="outline-text-2" id="text-org5c4c3f7">
 <dl class="org-dl">
 <dt>M-d</dt><dd>后一词</dd>
 <dt>C-d</dt><dd>后一字</dd>
 <dt>M-del</dt><dd>前一词</dd>
 <dt>M-k</dt><dd>到句尾</dd>
-<dt>M-"</dt><dd>前面的所有空白</dd>
+<dt>M-&ldquo;</dt><dd>前面的所有空白</dd>
 <dt>M-z</dt><dd>删到指定字母处</dd>
 <dt>C-k</dt><dd>删除到行尾</dd>
 <dt>M-\</dt><dd>撒谎能出空格</dd>
@@ -120,9 +136,9 @@
 </div>
 </div>
 
-<div id="outline-container-org0ade268" class="outline-2">
-<h2 id="org0ade268">文本换位</h2>
-<div class="outline-text-2" id="text-org0ade268">
+<div id="outline-container-orgc9c570d" class="outline-2">
+<h2 id="orgc9c570d">文本换位</h2>
+<div class="outline-text-2" id="text-orgc9c570d">
 <dl class="org-dl">
 <dt>C-t</dt><dd>字符</dd>
 <dt>M-t</dt><dd>单词</dd>
@@ -132,9 +148,9 @@
 </div>
 </div>
 
-<div id="outline-container-org3efff82" class="outline-2">
-<h2 id="org3efff82">撤销</h2>
-<div class="outline-text-2" id="text-org3efff82">
+<div id="outline-container-orga85ea91" class="outline-2">
+<h2 id="orga85ea91">撤销</h2>
+<div class="outline-text-2" id="text-orga85ea91">
 <ul class="org-ul">
 <li>C-/</li>
 <li>C-x u</li>
@@ -144,9 +160,9 @@
 </div>
 </div>
 
-<div id="outline-container-org44452ab" class="outline-2">
-<h2 id="org44452ab">重做</h2>
-<div class="outline-text-2" id="text-org44452ab">
+<div id="outline-container-orgc57ef10" class="outline-2">
+<h2 id="orgc57ef10">重做</h2>
+<div class="outline-text-2" id="text-orgc57ef10">
 <ul class="org-ul">
 <li>C-g M-x undo</li>
 <li>C-g C-/</li>
@@ -156,18 +172,18 @@
 </div>
 </div>
 
-<div id="outline-container-org1ca054d" class="outline-2">
-<h2 id="org1ca054d">粘贴</h2>
-<div class="outline-text-2" id="text-org1ca054d">
+<div id="outline-container-orgb91aa36" class="outline-2">
+<h2 id="orgb91aa36">粘贴</h2>
+<div class="outline-text-2" id="text-orgb91aa36">
 <ul class="org-ul">
 <li>C-y</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgd1b1b73" class="outline-2">
-<h2 id="orgd1b1b73">tab/空格转换</h2>
-<div class="outline-text-2" id="text-orgd1b1b73">
+<div id="outline-container-org6347ae9" class="outline-2">
+<h2 id="org6347ae9">tab/空格转换</h2>
+<div class="outline-text-2" id="text-org6347ae9">
 <ul class="org-ul">
 <li>M-x tabify</li>
 <li>M-x untabify</li>
@@ -175,33 +191,33 @@
 </div>
 </div>
 
-<div id="outline-container-org8fec6a8" class="outline-2">
-<h2 id="org8fec6a8">让选择的区块自动对齐</h2>
-<div class="outline-text-2" id="text-org8fec6a8">
+<div id="outline-container-orga6995f0" class="outline-2">
+<h2 id="orga6995f0">让选择的区块自动对齐</h2>
+<div class="outline-text-2" id="text-orga6995f0">
 <ul class="org-ul">
 <li>M-x indent-region</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org067bff2" class="outline-2">
-<h2 id="org067bff2">其他命令</h2>
-<div class="outline-text-2" id="text-org067bff2">
+<div id="outline-container-orgd5fa208" class="outline-2">
+<h2 id="orgd5fa208">其他命令</h2>
+<div class="outline-text-2" id="text-orgd5fa208">
 <dl class="org-dl">
-<dt>C-u &lt;数字&gt; &lt;命令&gt;</dt><dd>重复命令n次</dd>
+<dt>C-u &lt;数字&gt; &lt;命令&gt;</dt><dd>重复命令 n 次</dd>
 <dt>M-&lt;数字&gt;   &lt;命令&gt;</dt><dd>同上</dd>
-<dt>M-!</dt><dd>运行shell命令</dd>
+<dt>M-!</dt><dd>运行 shell 命令</dd>
 <dt>C-u M-!</dt><dd>执行一条外部命令，并输出到光标位置</dd>
 <dt>M-x cd</dt><dd>改变工作目录</dd>
 <dt>M-x pwd</dt><dd>当前工作目录</dd>
-<dt>M-x eval-buffer</dt><dd>在.emacs的buffer中运行，重新加载emacs配置</dd>
+<dt>M-x eval-buffer</dt><dd>在.emacs 的 buffer 中运行，重新加载 emacs 配置</dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-org8ca26b7" class="outline-2">
-<h2 id="org8ca26b7">查找替换</h2>
-<div class="outline-text-2" id="text-org8ca26b7">
+<div id="outline-container-org317db33" class="outline-2">
+<h2 id="org317db33">查找替换</h2>
+<div class="outline-text-2" id="text-org317db33">
 <dl class="org-dl">
 <dt>C-r</dt><dd>向上查找</dd>
 <dt>C-s</dt><dd>向下查找</dd>
@@ -225,9 +241,9 @@
 </div>
 </div>
 
-<div id="outline-container-org44efab3" class="outline-2">
-<h2 id="org44efab3">查找替换其他指令</h2>
-<div class="outline-text-2" id="text-org44efab3">
+<div id="outline-container-orga020319" class="outline-2">
+<h2 id="orga020319">查找替换其他指令</h2>
+<div class="outline-text-2" id="text-orga020319">
 <ul class="org-ul">
 <li>M-x replace-*</li>
 <li>M-x search-*</li>
@@ -235,23 +251,23 @@
 </div>
 </div>
 
-<div id="outline-container-org7993d4e" class="outline-2">
-<h2 id="org7993d4e">窗口</h2>
-<div class="outline-text-2" id="text-org7993d4e">
+<div id="outline-container-org0afa0bc" class="outline-2">
+<h2 id="org0afa0bc">窗口</h2>
+<div class="outline-text-2" id="text-org0afa0bc">
 <dl class="org-dl">
 <dt>C-x 0</dt><dd>关掉当前窗口</dd>
 <dt>C-x 1</dt><dd>关掉其他窗口</dd>
 <dt>C-x o</dt><dd>切换窗口</dd>
 <dt>C-x 2</dt><dd>水平两分窗口</dd>
 <dt>C-x 3</dt><dd>垂直两分窗口</dd>
-<dt>C-x 5 2</dt><dd>新frame</dd>
+<dt>C-x 5 2</dt><dd>新 frame</dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-org264b657" class="outline-2">
-<h2 id="org264b657">buffer</h2>
-<div class="outline-text-2" id="text-org264b657">
+<div id="outline-container-org83ebd36" class="outline-2">
+<h2 id="org83ebd36">buffer</h2>
+<div class="outline-text-2" id="text-org83ebd36">
 <dl class="org-dl">
 <dt>C-x C-b</dt><dd>查看</dd>
 <dt>C-x b</dt><dd>切换</dd>
@@ -262,9 +278,9 @@
 </div>
 </div>
 
-<div id="outline-container-org73e0fe4" class="outline-2">
-<h2 id="org73e0fe4">翻页</h2>
-<div class="outline-text-2" id="text-org73e0fe4">
+<div id="outline-container-org4b7fc5e" class="outline-2">
+<h2 id="org4b7fc5e">翻页</h2>
+<div class="outline-text-2" id="text-org4b7fc5e">
 <dl class="org-dl">
 <dt>C-v</dt><dd>下一页</dd>
 <dt>M-v</dt><dd>上一页</dd>
@@ -272,9 +288,9 @@
 </div>
 </div>
 
-<div id="outline-container-org66c3875" class="outline-2">
-<h2 id="org66c3875">选择</h2>
-<div class="outline-text-2" id="text-org66c3875">
+<div id="outline-container-org08eb244" class="outline-2">
+<h2 id="org08eb244">选择</h2>
+<div class="outline-text-2" id="text-org08eb244">
 <dl class="org-dl">
 <dt>M-h</dt><dd>选择段落</dd>
 <dt>C-x h</dt><dd>全部选择</dd>
@@ -282,25 +298,25 @@
 </div>
 </div>
 
-<div id="outline-container-org00e60c0" class="outline-2">
-<h2 id="org00e60c0">普通区块</h2>
-<div class="outline-text-2" id="text-org00e60c0">
+<div id="outline-container-orga06649b" class="outline-2">
+<h2 id="orga06649b">普通区块</h2>
+<div class="outline-text-2" id="text-orga06649b">
 <dl class="org-dl">
-<dt>C-SPC</dt><dd>单个位置set mark</dd>
+<dt>C-SPC</dt><dd>单个位置 set mark</dd>
 <dt>M-x set-mark-command</dt><dd>同上</dd>
 <dt>C-@</dt><dd>同上</dd>
-<dt>M-@</dt><dd>对word进行set Mark</dd>
-<dt>M-w</dt><dd>先set Mark，移到光标，M-w就可以复制</dd>
+<dt>M-@</dt><dd>对 word 进行 set Mark</dd>
+<dt>M-w</dt><dd>先 set Mark，移到光标，M-w 就可以复制</dd>
 <dt>C-w</dt><dd>剪切</dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-org952c2cc" class="outline-2">
-<h2 id="org952c2cc">矩形区块</h2>
-<div class="outline-text-2" id="text-org952c2cc">
+<div id="outline-container-orga9e47a9" class="outline-2">
+<h2 id="orga9e47a9">矩形区块</h2>
+<div class="outline-text-2" id="text-orga9e47a9">
 <p>
-用这些快捷键要先关闭cua-mode
+用这些快捷键要先关闭 cua-mode
 </p>
 <dl class="org-dl">
 <dt>C-x r t</dt><dd>用串填充矩形区域</dd>
@@ -312,12 +328,13 @@
 </div>
 </div>
 
-<div id="outline-container-orgb6f5165" class="outline-2">
-<h2 id="orgb6f5165">寄存器</h2>
-<div class="outline-text-2" id="text-orgb6f5165">
-</div><div id="outline-container-org4257021" class="outline-3">
-<h3 id="org4257021">光标位置和窗口状态</h3>
-<div class="outline-text-3" id="text-org4257021">
+<div id="outline-container-orgc31d9f8" class="outline-2">
+<h2 id="orgc31d9f8">寄存器</h2>
+<div class="outline-text-2" id="text-orgc31d9f8">
+</div>
+<div id="outline-container-orgdfc9bee" class="outline-3">
+<h3 id="orgdfc9bee">光标位置和窗口状态</h3>
+<div class="outline-text-3" id="text-orgdfc9bee">
 <dl class="org-dl">
 <dt>C-x r SPC &lt;寄存器名&gt;</dt><dd>存贮光标位置</dd>
 <dt>C-x r w &lt;寄存器名&gt;</dt><dd>保存当前窗口状态</dd>
@@ -327,9 +344,9 @@
 </div>
 </div>
 
-<div id="outline-container-org19d192e" class="outline-3">
-<h3 id="org19d192e">文本和数字</h3>
-<div class="outline-text-3" id="text-org19d192e">
+<div id="outline-container-orgec2168b" class="outline-3">
+<h3 id="orgec2168b">文本和数字</h3>
+<div class="outline-text-3" id="text-orgec2168b">
 <dl class="org-dl">
 <dt>C-x r s &lt;寄存器名&gt;</dt><dd>将连续区块拷贝到寄存器中</dd>
 <dt>C-x r r &lt;寄存器名&gt;</dt><dd>将矩形区块拷贝到寄存器中</dd>
@@ -342,9 +359,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgc9dba07" class="outline-2">
-<h2 id="orgc9dba07">宏模式</h2>
-<div class="outline-text-2" id="text-orgc9dba07">
+<div id="outline-container-org77d6b71" class="outline-2">
+<h2 id="org77d6b71">宏模式</h2>
+<div class="outline-text-2" id="text-org77d6b71">
 <dl class="org-dl">
 <dt>C-x (</dt><dd>开始一个宏的定义</dd>
 <dt>C-x )</dt><dd>结束一个宏的定义</dd>
@@ -355,9 +372,9 @@
 </div>
 </div>
 
-<div id="outline-container-org0cd1649" class="outline-2">
-<h2 id="org0cd1649">书签</h2>
-<div class="outline-text-2" id="text-org0cd1649">
+<div id="outline-container-orgdb6e08f" class="outline-2">
+<h2 id="orgdb6e08f">书签</h2>
+<div class="outline-text-2" id="text-orgdb6e08f">
 <dl class="org-dl">
 <dt>C-x r m &lt;name&gt;</dt><dd>设置书签</dd>
 <dt>C-x r b &lt;name&gt;</dt><dd>跳转到书签</dd>
@@ -369,9 +386,9 @@
 </div>
 </div>
 
-<div id="outline-container-orgc7922f5" class="outline-2">
-<h2 id="orgc7922f5">目录模式</h2>
-<div class="outline-text-2" id="text-orgc7922f5">
+<div id="outline-container-org19b9618" class="outline-2">
+<h2 id="org19b9618">目录模式</h2>
+<div class="outline-text-2" id="text-org19b9618">
 <dl class="org-dl">
 <dt>C-x d</dt><dd>启动目录模式</dd>
 <dt>M-x dired</dt><dd>同上</dd>
@@ -384,70 +401,38 @@
 </div>
 </div>
 
-<div id="outline-container-orgc18ea7d" class="outline-2">
-<h2 id="orgc18ea7d">帮助</h2>
-<div class="outline-text-2" id="text-orgc18ea7d">
+<div id="outline-container-org8998522" class="outline-2">
+<h2 id="org8998522">帮助</h2>
+<div class="outline-text-2" id="text-org8998522">
 <dl class="org-dl">
-<dt>C-h k</dt><dd>显示你将按下的键执行的function.</dd>
-<dt>C-h f</dt><dd>列出function的功能说明。</dd>
+<dt>C-h k</dt><dd>显示你将按下的键执行的 function.</dd>
+<dt>C-h f</dt><dd>列出 function 的功能说明。</dd>
 <dt>C-h b</dt><dd>列出目前所有的快捷键。</dd>
-<dt>C-h m</dt><dd>列出目前的mode的特殊说明.</dd>
+<dt>C-h m</dt><dd>列出目前的 mode 的特殊说明.</dd>
 <dt>C-c C-h</dt><dd>列出以C-c 开头的所有快捷键.</dd>
 </dl>
 </div>
 </div>
 
-</div>
-</div>
-    <div>
-      <div class="post-meta">
+    </div>
+</section>
+
+
+    <div class="post-meta">
         <span title="post date" class="post-info">2015-08-20</span>
-        <span title="last modification date" class="post-info">2020-04-02</span>
+        <span title="last modification date" class="post-info">2024-05-29</span>
         <span title="tags" class="post-info"><a href="/tags/emacs/">Emacs</a></span>
         <span title="author" class="post-info">forsil</span>
-      </div>
-      <section>
-        <h1>Comments</h1>
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-          //var disqus_developer = 1;
-          var disqus_identifier = "/blog/emacs-keyboard";
-          var disqus_url = "http://forsil.github.io/blog/emacs-keyboard";
-          var disqus_shortname = 'forsil';
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="//disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-      </section>
-      <script src="//code.jquery.com/jquery-latest.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
-      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-      <script src="/media/js/main.js"></script>
-      <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-84875940-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-      </script>
-      <div class="footer">
-        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
-        <p>
-          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:forsil &lt;dot&gt; 9 &lt;at&gt; gmail &lt;dot&gt; com">forsil</a>
-          &nbsp;&nbsp;-&nbsp;&nbsp;
-          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
-          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
-        </p>
-      </div>
     </div>
+<footer class="footer">
+    <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 29.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
+    <p>
+        Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:forsil &lt;dot&gt; 9 &lt;at&gt; gmail &lt;dot&gt; com">forsil</a>
+        &nbsp;&nbsp;-&nbsp;&nbsp;
+        Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+        <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+    </p>
+</footer>
 
   </body>
 </html>

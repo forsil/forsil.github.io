@@ -4,8 +4,8 @@
     <title>如是凡说</title>
     <link>http://forsil.github.io</link>
     <description>=====逝者如斯，上善若水=====</description>
-    <pubDate>Wed, 29 May 2024 21:29:54 CST</pubDate>
-    <lastBuildDate>Wed, 29 May 2024 21:29:54 CST</lastBuildDate>
+    <pubDate>Wed, 29 May 2024 22:20:49 CST</pubDate>
+    <lastBuildDate>Wed, 29 May 2024 22:20:49 CST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -16,36 +16,36 @@
         <div class="col-md-2"></div>
             <h1>Macbook Pro 13</h1>
             
-<div id="outline-container-org2381546" class="outline-2">
-<h2 id="org2381546">开箱 Macbook Pro 13 (2015 early)</h2>
-<div class="outline-text-2" id="text-org2381546">
+<div id="outline-container-orged72939" class="outline-2">
+<h2 id="orged72939">开箱 Macbook Pro 13 (2015 early)</h2>
+<div class="outline-text-2" id="text-orged72939">
 <p>
 网上很多开箱照，我就不献丑了
 </p>
 </div>
 </div>
 
-<div id="outline-container-org4f67b3a" class="outline-2">
-<h2 id="org4f67b3a">开机</h2>
-<div class="outline-text-2" id="text-org4f67b3a">
+<div id="outline-container-org416246f" class="outline-2">
+<h2 id="org416246f">开机</h2>
+<div class="outline-text-2" id="text-org416246f">
 <p>
 开机之后就是安装界面，一步一步地走就行了。
 </p>
 </div>
 </div>
 
-<div id="outline-container-org7ecbf34" class="outline-2">
-<h2 id="org7ecbf34">启动</h2>
-<div class="outline-text-2" id="text-org7ecbf34">
+<div id="outline-container-org79804ca" class="outline-2">
+<h2 id="org79804ca">启动</h2>
+<div class="outline-text-2" id="text-org79804ca">
 <p>
 osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是坏，反正不觉得丑就行了。
 </p>
 </div>
 </div>
 
-<div id="outline-container-org8cde44d" class="outline-2">
-<h2 id="org8cde44d">装软件</h2>
-<div class="outline-text-2" id="text-org8cde44d">
+<div id="outline-container-orgba2c88c" class="outline-2">
+<h2 id="orgba2c88c">装软件</h2>
+<div class="outline-text-2" id="text-orgba2c88c">
 <p>
 进入正题，作为一台开发机器，各种软件是必不可少的，待我细细道来：
 </p>
@@ -118,6 +118,20 @@ osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是
       <guid>http://forsil.github.io/blog/2018/05/16/using-surge</guid>
     </item>
     <item>
+      <title>Emacs Keyboard</title>
+      <link>http://forsil.github.io/blog/emacs-keyboard</link>
+      <description><![CDATA[emacs 命令速查，转抄自[[http://www.cnblogs.com/Henrya2/archive/2009/02/21/1395615.html]]]]></description>
+      <pubDate>2024-05-29</pubDate>
+      <guid>http://forsil.github.io/blog/emacs-keyboard</guid>
+    </item>
+    <item>
+      <title>在龙芯2f 8089b机器上安装 Debian7</title>
+      <link>http://forsil.github.io/blog/2014/09/01/在龙芯2f-8089b机器上安装-debian7/</link>
+      <description><![CDATA[install debian7 on loongson]]></description>
+      <pubDate>2024-05-29</pubDate>
+      <guid>http://forsil.github.io/blog/2014/09/01/在龙芯2f-8089b机器上安装-debian7/</guid>
+    </item>
+    <item>
       <title>Debugging Teams</title>
       <link>http://forsil.github.io/blog/2018/04/10/debugging-teams</link>
       <description><![CDATA[]]></description>
@@ -153,24 +167,10 @@ osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是
       <guid>http://forsil.github.io/blog/2016/09/28/给-synology-配置-aria2</guid>
     </item>
     <item>
-      <title>Emacs Keyboard</title>
-      <link>http://forsil.github.io/wiki/emacs-keyboard</link>
-      <description><![CDATA[emacs 命令速查，转抄自[[http://www.cnblogs.com/Henrya2/archive/2009/02/21/1395615.html]]]]></description>
-      <pubDate>2015-08-21</pubDate>
-      <guid>http://forsil.github.io/wiki/emacs-keyboard</guid>
-    </item>
-    <item>
       <title>程序员修炼之道 /Pragmatic Programmer/</title>
       <link>http://forsil.github.io/blog/2014/09/03/程序员修炼之道-pragmatic-programmer-/</link>
       <description><![CDATA[just a note while reading books]]></description>
       <pubDate>2015-06-11</pubDate>
-      <guid>http://forsil.github.io/blog/2014/09/03/程序员修炼之道-pragmatic-programmer-/</guid>
-    </item>
-    <item>
-      <title>程序员修炼之道 /Pragmatic Programmer/</title>
-      <link>http://forsil.github.io/blog/2014/09/03/程序员修炼之道-pragmatic-programmer-/</link>
-      <description><![CDATA[just a note while reading books]]></description>
-      <pubDate>2014-09-03</pubDate>
       <guid>http://forsil.github.io/blog/2014/09/03/程序员修炼之道-pragmatic-programmer-/</guid>
     </item>
   </channel>

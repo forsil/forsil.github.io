@@ -33,7 +33,6 @@
                     <ul class="nav navbar-nav navbar-right">
                             <li class="active"><a href="/read/">Read</a></li>
                             <li class="active"><a href="/blog/">Blog</a></li>
-                            <li class="active"><a href="/wiki/">Wiki</a></li>
                         <li><a href="/tags/">Tags</a></li>
                         <li><a href="/about/">About</a></li>
                         <li><a href="http://github.com/forsil">GitHub</a></li>
@@ -50,27 +49,27 @@
         <div class="col-md-2"></div>
             <h1>给 Synology 配置 Aria2</h1>
             
-<div id="outline-container-org12769ac" class="outline-2">
-<h2 id="org12769ac">安装 Docker</h2>
-<div class="outline-text-2" id="text-org12769ac">
+<div id="outline-container-orgf2f75e6" class="outline-2">
+<h2 id="orgf2f75e6">安装 Docker</h2>
+<div class="outline-text-2" id="text-orgf2f75e6">
 <p>
 如果下载速度慢，可以挂个 http 代理。操作面板-&gt;网络-&gt;代理服务器
 </p>
 </div>
 </div>
 
-<div id="outline-container-org280c05e" class="outline-2">
-<h2 id="org280c05e">安装包含 aria2 和 webui 的 Docker 镜像</h2>
-<div class="outline-text-2" id="text-org280c05e">
+<div id="outline-container-org8c7b70f" class="outline-2">
+<h2 id="org8c7b70f">安装包含 aria2 和 webui 的 Docker 镜像</h2>
+<div class="outline-text-2" id="text-org8c7b70f">
 <p>
 我用的是 joshua7v/webui-aria2，该镜像既包含了 aria2，也包含了 webui。
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga31944d" class="outline-2">
-<h2 id="orga31944d">做端口映射</h2>
-<div class="outline-text-2" id="text-orga31944d">
+<div id="outline-container-orge4b2bc8" class="outline-2">
+<h2 id="orge4b2bc8">做端口映射</h2>
+<div class="outline-text-2" id="text-orge4b2bc8">
 <p>
 6800:6800
 10080:8080
@@ -78,9 +77,9 @@
 </div>
 </div>
 
-<div id="outline-container-org72d5dbe" class="outline-2">
-<h2 id="org72d5dbe">启动镜像，修改 Procfile</h2>
-<div class="outline-text-2" id="text-org72d5dbe">
+<div id="outline-container-orgd6988fb" class="outline-2">
+<h2 id="orgd6988fb">启动镜像，修改 Procfile</h2>
+<div class="outline-text-2" id="text-orgd6988fb">
 <p>
 Procfile 中记录了开机启动的代码。
 </p>
@@ -109,9 +108,9 @@ Procfile 中记录了开机启动的代码。
 </div>
 </div>
 
-<div id="outline-container-org3dc1554" class="outline-2">
-<h2 id="org3dc1554">检验结果</h2>
-<div class="outline-text-2" id="text-org3dc1554">
+<div id="outline-container-orgea2417c" class="outline-2">
+<h2 id="orgea2417c">检验结果</h2>
+<div class="outline-text-2" id="text-orgea2417c">
 <p>
 打开 &lt;synology ip/domain :10080&gt;，然后看看能不能下载。如果碰到不能下载，提示是无法创建文件的错误，原因可能是下载文件夹的权限不够，可以使用一下命令修改文件夹权限：
 </p>
@@ -122,9 +121,9 @@ Procfile 中记录了开机启动的代码。
 </div>
 </div>
 
-<div id="outline-container-org4c4cfaa" class="outline-2">
-<h2 id="org4c4cfaa">参考链接</h2>
-<div class="outline-text-2" id="text-org4c4cfaa">
+<div id="outline-container-orgea62197" class="outline-2">
+<h2 id="orgea62197">参考链接</h2>
+<div class="outline-text-2" id="text-orgea62197">
 <p>
 <a href="http://blog.binux.me/2012/12/aria2-examples">aria2配置示例 -- by Binuxの杂货铺</a>
 </p>
