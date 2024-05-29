@@ -1,7 +1,7 @@
 #+TITLE: Macbook Pro 13
 #+AUTHOR: forsil
 #+EMAIL: forsil.9@gmail.com
-#+DATE: 2016-09-28
+#+DATE: 2015-03-15
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 
 * 开箱 Macbook Pro 13 (2015 early)
