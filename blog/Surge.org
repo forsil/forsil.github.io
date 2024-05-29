@@ -3,8 +3,8 @@
 #+EMAIL:       forsil.9@gmail.com
 #+DATE:        2018-05-16 Wed
 #+URI:         /blog/%y/%m/%d/using-surge
-#+KEYWORDS:    <TODO: insert your keywords here>
-#+TAGS:        <TODO: insert your tags here>
+#+KEYWORDS:
+#+TAGS:
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: <TODO: insert your description here>
@@ -46,7 +46,7 @@ URL 正则表达式： ^https?://www\.zhihu\.com
 
 #+BEGIN_QUOTE
 规则类型：ID_CIDR
-内容：指定IP
+内容：指定 IP
 策略：REJECT
 不执行 DNS 解析：true
 #+END_QUOTE
