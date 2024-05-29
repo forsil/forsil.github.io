@@ -1,6 +1,7 @@
 #+TITLE: Macbook Pro 13
 #+AUTHOR: forsil
 #+EMAIL: forsil.9@gmail.com
+#+DATE: 2016-09-28
 #+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 
 * 开箱 Macbook Pro 13 (2015 early)
@@ -36,7 +37,7 @@ osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是
 - the unarchiver: 解压缩工具，免费的
 - kindle: 看 kindle 书籍用
 - keepassx: 密码管理器
-- dash: api文档管理器，可以查看各种软件 api，可免费
+- dash: api 文档管理器，可以查看各种软件 api，可免费
 - noizio: 白噪声，免费
 - alfred: Mac 最强利器，配合 powerpack，免费的功能和 OSX 自带的 spotlight 差不多，workflow 才是它的魅力所在
   - douban: 搜索豆瓣内容
