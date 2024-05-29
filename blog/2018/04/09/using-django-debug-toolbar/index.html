@@ -31,8 +31,9 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="/blog/">Blog</a></li>
                             <li class="active"><a href="/read/">Read</a></li>
+                            <li class="active"><a href="/blog/">Blog</a></li>
+                            <li class="active"><a href="/wiki/">Wiki</a></li>
                         <li><a href="/tags/">Tags</a></li>
                         <li><a href="/about/">About</a></li>
                         <li><a href="http://github.com/forsil">GitHub</a></li>
@@ -52,9 +53,9 @@
 Django-Debug-Toolbar <a href="https://django-debug-toolbar.readthedocs.io/en/stable/">Mainpage</a>
 </p>
 
-<div id="outline-container-orgfd5d58f" class="outline-2">
-<h2 id="orgfd5d58f">My System Configuration</h2>
-<div class="outline-text-2" id="text-orgfd5d58f">
+<div id="outline-container-orgf2724fb" class="outline-2">
+<h2 id="orgf2724fb">My System Configuration</h2>
+<div class="outline-text-2" id="text-orgf2724fb">
 <p>
 Django Version: 2.0.4
 Django-Debug-Toolbar Version: 1.9.1
@@ -62,27 +63,27 @@ Django-Debug-Toolbar Version: 1.9.1
 </div>
 </div>
 
-<div id="outline-container-org018a333" class="outline-2">
-<h2 id="org018a333">install django-debug-toolbar</h2>
-<div class="outline-text-2" id="text-org018a333">
+<div id="outline-container-org19ff1fd" class="outline-2">
+<h2 id="org19ff1fd">install django-debug-toolbar</h2>
+<div class="outline-text-2" id="text-org19ff1fd">
 <p>
 Add following to the end of file settings.py of the project.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-python">if settings.DEBUG:
-	INTERNAL_IPS = [
-		# to work in development
-		'127.0.0.1',
-	]
+<pre class="src src-python">  if settings.DEBUG:
+	  INTERNAL_IPS = [
+		  # to work in development
+		  '127.0.0.1',
+	  ]
 
-	MIDDLEWARE += [
-		'debug_toolbar.middleware.DebugToolbarMiddleware',
-	]
+	  MIDDLEWARE += [
+		  'debug_toolbar.middleware.DebugToolbarMiddleware',
+	  ]
 
-	INSTALLED_APPS += [
-		'debug_toolbar',
-	]
+	  INSTALLED_APPS += [
+		  'debug_toolbar',
+	  ]
 </pre>
 </div>
 
@@ -104,22 +105,23 @@ Add following to the end of file urls.py of the project.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-python">if settings.DEBUG:
-	import debug_toolbar
-	urlpatterns = [
-		path(r'^__debug__/', include(debug_toolbar.urls)),
-	] + urlpatterns
+<pre class="src src-python">  if settings.DEBUG:
+	  import debug_toolbar
+	  urlpatterns = [
+		  path(r'^__debug__/', include(debug_toolbar.urls)),
+	  ] + urlpatterns
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org7de40dd" class="outline-2">
-<h2 id="org7de40dd">FAQ</h2>
-<div class="outline-text-2" id="text-org7de40dd">
-</div><div id="outline-container-org065871a" class="outline-3">
-<h3 id="org065871a">'set' object is not reversible</h3>
-<div class="outline-text-3" id="text-org065871a">
+<div id="outline-container-org0b0e40c" class="outline-2">
+<h2 id="org0b0e40c">FAQ</h2>
+<div class="outline-text-2" id="text-org0b0e40c">
+</div>
+<div id="outline-container-orgc534b94" class="outline-3">
+<h3 id="orgc534b94">&rsquo;set&rsquo; object is not reversible</h3>
+<div class="outline-text-3" id="text-orgc534b94">
 <p>
 When running manage.py to runserver, the error occured.
 </p>
@@ -133,7 +135,7 @@ debug_toolbar/base.html, error at line 16
 </p>
 
 <p>
-'set' object is not reversible
+&rsquo;set&rsquo; object is not reversible
 </p>
 </blockquote>
 
@@ -142,29 +144,29 @@ A:
 In the urls.py of app:
 </p>
 <div class="org-src-container">
-<pre class="src src-python"># Error
-urlpatterns = {
-	path('', views.index, name='index'),
-}
+<pre class="src src-python">  # Error
+  urlpatterns = {
+	  path('', views.index, name='index'),
+  }
 
-# Right, replace {} by []
-urlpatterns = [
-	path('', views.index, name='index'),
-]
+  # Right, replace {} by []
+  urlpatterns = [
+	  path('', views.index, name='index'),
+  ]
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org48df29a" class="outline-3">
-<h3 id="org48df29a">Query spend 30s by 20w rows of data in mysql</h3>
-<div class="outline-text-3" id="text-org48df29a">
+<div id="outline-container-org9a8a162" class="outline-3">
+<h3 id="org9a8a162">Query spend 30s by 20w rows of data in mysql</h3>
+<div class="outline-text-3" id="text-org9a8a162">
 <p>
 Q:
 </p>
 <blockquote>
 <p>
-In Django model, I set the ordering with 'create_time'. So everytime I query the table it will order the result in 'create_time' which spent much time.
+In Django model, I set the ordering with &rsquo;create_time&rsquo;. So everytime I query the table it will order the result in &rsquo;create_time&rsquo; which spent much time.
 </p>
 </blockquote>
 
@@ -186,7 +188,7 @@ Create index on the ordering column.</p>
         <span title="author" class="post-info">forsil</span>
     </div>
 <footer class="footer">
-    <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
+    <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 29.x (<a href="http://orgmode.org">Org mode</a> 9.x)</p>
     <p>
         Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:forsil &lt;dot&gt; 9 &lt;at&gt; gmail &lt;dot&gt; com">forsil</a>
         &nbsp;&nbsp;-&nbsp;&nbsp;
