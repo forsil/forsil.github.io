@@ -4,10 +4,17 @@
     <title>如是凡说</title>
     <link>http://forsil.github.io</link>
     <description>=====逝者如斯，上善若水=====</description>
-    <pubDate>Wed, 29 May 2024 22:20:49 CST</pubDate>
-    <lastBuildDate>Wed, 29 May 2024 22:20:49 CST</lastBuildDate>
+    <pubDate>Thu, 13 Jun 2024 00:46:36 CST</pubDate>
+    <lastBuildDate>Thu, 13 Jun 2024 00:46:36 CST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>读《松驰感》</title>
+      <link>http://forsil.github.io/read/2024/05/29/song-chi-gan</link>
+      <description><![CDATA[]]></description>
+      <pubDate>2024-06-13</pubDate>
+      <guid>http://forsil.github.io/read/2024/05/29/song-chi-gan</guid>
+    </item>
     <item>
       <title>Macbook Pro 13</title>
       <link>http://forsil.github.io/blog/2015/03/15/macbook-pro-13/</link>
@@ -16,36 +23,36 @@
         <div class="col-md-2"></div>
             <h1>Macbook Pro 13</h1>
             
-<div id="outline-container-orged72939" class="outline-2">
-<h2 id="orged72939">开箱 Macbook Pro 13 (2015 early)</h2>
-<div class="outline-text-2" id="text-orged72939">
+<div id="outline-container-orgf9f82ab" class="outline-2">
+<h2 id="orgf9f82ab">开箱 Macbook Pro 13 (2015 early)</h2>
+<div class="outline-text-2" id="text-orgf9f82ab">
 <p>
 网上很多开箱照，我就不献丑了
 </p>
 </div>
 </div>
 
-<div id="outline-container-org416246f" class="outline-2">
-<h2 id="org416246f">开机</h2>
-<div class="outline-text-2" id="text-org416246f">
+<div id="outline-container-org531cc4c" class="outline-2">
+<h2 id="org531cc4c">开机</h2>
+<div class="outline-text-2" id="text-org531cc4c">
 <p>
 开机之后就是安装界面，一步一步地走就行了。
 </p>
 </div>
 </div>
 
-<div id="outline-container-org79804ca" class="outline-2">
-<h2 id="org79804ca">启动</h2>
-<div class="outline-text-2" id="text-org79804ca">
+<div id="outline-container-orgb64634f" class="outline-2">
+<h2 id="orgb64634f">启动</h2>
+<div class="outline-text-2" id="text-orgb64634f">
 <p>
 osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是坏，反正不觉得丑就行了。
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgba2c88c" class="outline-2">
-<h2 id="orgba2c88c">装软件</h2>
-<div class="outline-text-2" id="text-orgba2c88c">
+<div id="outline-container-orgc18d105" class="outline-2">
+<h2 id="orgc18d105">装软件</h2>
+<div class="outline-text-2" id="text-orgc18d105">
 <p>
 进入正题，作为一台开发机器，各种软件是必不可少的，待我细细道来：
 </p>
@@ -165,13 +172,6 @@ osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是
       <description><![CDATA[在 DSM 系统中通过 docker 添加 aria2 支持]]></description>
       <pubDate>2016-09-28</pubDate>
       <guid>http://forsil.github.io/blog/2016/09/28/给-synology-配置-aria2</guid>
-    </item>
-    <item>
-      <title>程序员修炼之道 /Pragmatic Programmer/</title>
-      <link>http://forsil.github.io/blog/2014/09/03/程序员修炼之道-pragmatic-programmer-/</link>
-      <description><![CDATA[just a note while reading books]]></description>
-      <pubDate>2015-06-11</pubDate>
-      <guid>http://forsil.github.io/blog/2014/09/03/程序员修炼之道-pragmatic-programmer-/</guid>
     </item>
   </channel>
 </rss>

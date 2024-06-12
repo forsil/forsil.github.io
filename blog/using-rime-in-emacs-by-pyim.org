@@ -1,0 +1,10 @@
+#+TITLE: 在 Emacs 中使用 Rime 词库
+#+AUTHOR:      forsil
+#+EMAIL:       forsil.9@gmail.com
+#+DATE:        2024-05-30 Thu
+#+URI:         /blog/%y/%m/%d/using-rime-in-emacs-by-pyim
+#+KEYWORDS:    emacs, pyim, rime, liberime
+#+TAGS:        emacs, rime
+#+LANGUAGE:    cn
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: 在 Emacs 中使用 pyim，不再依赖外部输入法，保持输入体验一致。再结合 rime 词库，提升中文输入效率。
