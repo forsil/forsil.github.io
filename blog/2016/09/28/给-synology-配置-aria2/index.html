@@ -49,27 +49,27 @@
         <div class="col-md-2"></div>
             <h1>给 Synology 配置 Aria2</h1>
             
-<div id="outline-container-orgcca1941" class="outline-2">
-<h2 id="orgcca1941">安装 Docker</h2>
-<div class="outline-text-2" id="text-orgcca1941">
+<div id="outline-container-org3d3630d" class="outline-2">
+<h2 id="org3d3630d">安装 Docker</h2>
+<div class="outline-text-2" id="text-org3d3630d">
 <p>
 如果下载速度慢，可以挂个 http 代理。操作面板-&gt;网络-&gt;代理服务器
 </p>
 </div>
 </div>
 
-<div id="outline-container-org052d3e3" class="outline-2">
-<h2 id="org052d3e3">安装包含 aria2 和 webui 的 Docker 镜像</h2>
-<div class="outline-text-2" id="text-org052d3e3">
+<div id="outline-container-orgfa4e1fa" class="outline-2">
+<h2 id="orgfa4e1fa">安装包含 aria2 和 webui 的 Docker 镜像</h2>
+<div class="outline-text-2" id="text-orgfa4e1fa">
 <p>
 我用的是 joshua7v/webui-aria2，该镜像既包含了 aria2，也包含了 webui。
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgf402f32" class="outline-2">
-<h2 id="orgf402f32">做端口映射</h2>
-<div class="outline-text-2" id="text-orgf402f32">
+<div id="outline-container-orgedd5db0" class="outline-2">
+<h2 id="orgedd5db0">做端口映射</h2>
+<div class="outline-text-2" id="text-orgedd5db0">
 <p>
 6800:6800
 10080:8080
@@ -77,9 +77,9 @@
 </div>
 </div>
 
-<div id="outline-container-org685258b" class="outline-2">
-<h2 id="org685258b">启动镜像，修改 Procfile</h2>
-<div class="outline-text-2" id="text-org685258b">
+<div id="outline-container-org3d67b6d" class="outline-2">
+<h2 id="org3d67b6d">启动镜像，修改 Procfile</h2>
+<div class="outline-text-2" id="text-org3d67b6d">
 <p>
 Procfile 中记录了开机启动的代码。
 </p>
@@ -108,9 +108,9 @@ Procfile 中记录了开机启动的代码。
 </div>
 </div>
 
-<div id="outline-container-orgfe2f558" class="outline-2">
-<h2 id="orgfe2f558">检验结果</h2>
-<div class="outline-text-2" id="text-orgfe2f558">
+<div id="outline-container-org0bc5a63" class="outline-2">
+<h2 id="org0bc5a63">检验结果</h2>
+<div class="outline-text-2" id="text-org0bc5a63">
 <p>
 打开 &lt;synology ip/domain :10080&gt;，然后看看能不能下载。如果碰到不能下载，提示是无法创建文件的错误，原因可能是下载文件夹的权限不够，可以使用一下命令修改文件夹权限：
 </p>
@@ -121,9 +121,9 @@ Procfile 中记录了开机启动的代码。
 </div>
 </div>
 
-<div id="outline-container-orge68d31b" class="outline-2">
-<h2 id="orge68d31b">参考链接</h2>
-<div class="outline-text-2" id="text-orge68d31b">
+<div id="outline-container-orgfc4f4fe" class="outline-2">
+<h2 id="orgfc4f4fe">参考链接</h2>
+<div class="outline-text-2" id="text-orgfc4f4fe">
 <p>
 <a href="http://blog.binux.me/2012/12/aria2-examples">aria2配置示例 -- by Binuxの杂货铺</a>
 </p>

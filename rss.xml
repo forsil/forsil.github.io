@@ -4,8 +4,8 @@
     <title>如是凡说</title>
     <link>http://forsil.github.io</link>
     <description>=====逝者如斯，上善若水=====</description>
-    <pubDate>Thu, 13 Jun 2024 07:15:25 CST</pubDate>
-    <lastBuildDate>Thu, 13 Jun 2024 07:15:25 CST</lastBuildDate>
+    <pubDate>Thu, 13 Jun 2024 07:15:53 CST</pubDate>
+    <lastBuildDate>Thu, 13 Jun 2024 07:15:53 CST</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
     <item>
@@ -25,28 +25,123 @@
     <item>
       <title>Macbook Pro 13</title>
       <link>http://forsil.github.io/blog/2015/03/15/macbook-pro-13/</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[<section id="content" role="main">
+    <div id="outline-container-sec-" class="row" style="padding-top: 70px">
+        <div class="col-md-2"></div>
+            <h1>Macbook Pro 13</h1>
+            
+<div id="outline-container-org62b0f32" class="outline-2">
+<h2 id="org62b0f32">开箱 Macbook Pro 13 (2015 early)</h2>
+<div class="outline-text-2" id="text-org62b0f32">
+<p>
+网上很多开箱照，我就不献丑了
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdeb16d5" class="outline-2">
+<h2 id="orgdeb16d5">开机</h2>
+<div class="outline-text-2" id="text-orgdeb16d5">
+<p>
+开机之后就是安装界面，一步一步地走就行了。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0298659" class="outline-2">
+<h2 id="org0298659">启动</h2>
+<div class="outline-text-2" id="text-org0298659">
+<p>
+osx 10.10.2 yosemite，扁平化的图标，粗人一个，不能说出是好是坏，反正不觉得丑就行了。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6975b8d" class="outline-2">
+<h2 id="org6975b8d">装软件</h2>
+<div class="outline-text-2" id="text-org6975b8d">
+<p>
+进入正题，作为一台开发机器，各种软件是必不可少的，待我细细道来：
+</p>
+
+<ul class="org-ul">
+<li>xcode: 作为开发机器，xcode 是必须的，不多说</li>
+<li>steam: 游戏虽然不是必须的，但缺少的话总是感觉有点不习惯
+<ul class="org-ul">
+<li>Dota2: 虽然是个手残菜鸟，但还是要装的</li>
+</ul></li>
+<li>battle.net: 暴雪的战网客户端，Mac 下也是可以玩炉石，WoW 的，还是原生的哦 <a href="http://dist.blizzard.com/downloads/bna-installers/322d5bb9ae0318de3d4cde7641c96425/beta.3/Battle.net-Beta-Setup-zhCN.zip">下载地址</a></li>
+<li>shadowsocksX: 你懂的，必需品，从此 Google 有望</li>
+<li>mplayerx: 视频播放器，没怎么用过</li>
+<li>vlc: 也是一款视频播放器</li>
+<li>Google Chrome: 网页浏览器，主要用来看 flash 视频</li>
+<li>Firefox: 同是网页浏览器，以前 Linux 上的主力，在 OSX 上还行</li>
+<li>网易云音乐: 不想下载，只是在线听，特点是资源丰富，而且有许多别人整理的歌单</li>
+<li>dropbox: 网盘，已经习惯了，不打算改</li>
+<li>Thunder: 迅雷，偶尔下载稀缺资源用</li>
+<li>evernote: 资料整理，以前整理的都在这上面</li>
+<li>textmate: OSX 上非常强大的编辑器，虽然我用 emacs，但它还是必须得推荐的</li>
+<li>eamcs: 我的编辑器</li>
+<li>iterm2: 替代 OSX 自带的虚拟终端</li>
+<li>github for mac: 图形查看 github repo 信息</li>
+<li>parallels desktop: 最强虚拟机，小声</li>
+<li>the unarchiver: 解压缩工具，免费的</li>
+<li>kindle: 看 kindle 书籍用</li>
+<li>keepassx: 密码管理器</li>
+<li>dash: api 文档管理器，可以查看各种软件 api，可免费</li>
+<li>noizio: 白噪声，免费</li>
+<li>alfred: Mac 最强利器，配合 powerpack，免费的功能和 OSX 自带的 spotlight 差不多，workflow 才是它的魅力所在
+<ul class="org-ul">
+<li>douban: 搜索豆瓣内容</li>
+<li>flux: 控制 f.lux</li>
+<li>taobao suggest: 淘宝搜索</li>
+<li>v2ex: v2ex 贴子搜索</li>
+<li>workflow searcher: 搜索 workflows</li>
+</ul></li>
+<li>f.lux: 色温调节</li>
+<li>homebrew: 包管理器，让 OSX 的终端表现与 Linux 一样出色</li>
+<li>zsh: 系统自带，功能强大
+<ul class="org-ul">
+<li>oh-my-zsh: zsh 的一些配置</li>
+</ul></li>
+<li>safari 插件: 让 safari 更加强大
+<ul class="org-ul">
+<li>ublock: 过滤广告</li>
+<li>feedly notifier: feedly rss 更新通知</li>
+<li>wikiwand: 让 wikipedia 更加美丽</li>
+<li>clicktopluginforchina: 让能够支持 html5 播放的视频网站使用 html5 播放，不用煮鸡蛋，获取该插件请在 twitter 上 @ilools</li>
+<li>turn of light: 看视频时周围变暗</li>
+<li>v2ex.ext: v2ex 长贴查看 @ 内容</li>
+<li>youkuhtml5player: 朱一的 “妈妈再也不用担心我发热” 计划</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+    </div>
+</section>
+]]></description>
       <pubDate>2024-05-29</pubDate>
       <guid>http://forsil.github.io/blog/2015/03/15/macbook-pro-13/</guid>
     </item>
     <item>
       <title>Surge 的使用</title>
       <link>http://forsil.github.io/blog/2018/05/16/using-surge</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[<TODO: insert your description here>]]></description>
       <pubDate>2024-05-29</pubDate>
       <guid>http://forsil.github.io/blog/2018/05/16/using-surge</guid>
     </item>
     <item>
       <title>Emacs Keyboard</title>
       <link>http://forsil.github.io/blog/emacs-keyboard</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[emacs 命令速查，转抄自[[http://www.cnblogs.com/Henrya2/archive/2009/02/21/1395615.html]]]]></description>
       <pubDate>2024-05-29</pubDate>
       <guid>http://forsil.github.io/blog/emacs-keyboard</guid>
     </item>
     <item>
       <title>在龙芯2f 8089b机器上安装 Debian7</title>
       <link>http://forsil.github.io/blog/2014/09/01/在龙芯2f-8089b机器上安装-debian7/</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[install debian7 on loongson]]></description>
       <pubDate>2024-05-29</pubDate>
       <guid>http://forsil.github.io/blog/2014/09/01/在龙芯2f-8089b机器上安装-debian7/</guid>
     </item>
@@ -60,21 +155,21 @@
     <item>
       <title>Using Django-Debug-Toolbar</title>
       <link>http://forsil.github.io/blog/2018/04/09/using-django-debug-toolbar</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[using django-debug-toolbar to debug django sql query performance.]]></description>
       <pubDate>2018-05-16</pubDate>
       <guid>http://forsil.github.io/blog/2018/04/09/using-django-debug-toolbar</guid>
     </item>
     <item>
       <title>Computer Networks</title>
       <link>http://forsil.github.io/blog/2016/10/02/computer-networks</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[读「计算机网络」做的笔记]]></description>
       <pubDate>2018-05-16</pubDate>
       <guid>http://forsil.github.io/blog/2016/10/02/computer-networks</guid>
     </item>
     <item>
       <title>观止 -- 微软创建 NT 和未来的夺命狂奔</title>
       <link>http://forsil.github.io/blog/2016/09/29/观止----微软创建-nt-和未来的夺命狂奔</link>
-      <description><![CDATA[]]></description>
+      <description><![CDATA[本书讲述了微软在 1989-1993 年开发 NT 期间的酸甜苦辣]]></description>
       <pubDate>2016-09-29</pubDate>
       <guid>http://forsil.github.io/blog/2016/09/29/观止----微软创建-nt-和未来的夺命狂奔</guid>
     </item>

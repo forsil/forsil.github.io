@@ -52,9 +52,9 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org355b218">1. 网络安装 Debian</a></li>
-<li><a href="#org0391f37">2. 安装 Xfce4</a></li>
-<li><a href="#org984df3d">3. 我额外安装的软件包</a></li>
+<li><a href="#org3be1039">1. 网络安装 Debian</a></li>
+<li><a href="#orgdb58eb2">2. 安装 Xfce4</a></li>
+<li><a href="#org648f48f">3. 我额外安装的软件包</a></li>
 </ul>
 </div>
 </div>
@@ -62,8 +62,8 @@
 本篇只是对网上在龙芯 2f 上安装 debian7 系统的一个整理，更可以为了我以后重新安装 debian7 提供方便（我才不说这才是我真正的目的呢）。
 </p>
 
-<div id="outline-container-org355b218" class="outline-2">
-<h2 id="org355b218"><span class="section-number-2">1.</span> 网络安装 Debian</h2>
+<div id="outline-container-org3be1039" class="outline-2">
+<h2 id="org3be1039"><span class="section-number-2">1.</span> 网络安装 Debian</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 首先你得有个u盘，网上说最好不要超过2g，或者是就分配个低于2g的分区，我是直接就拿了一个2g的u盘建了 ext2 分区，然后直接就进入引导，没有网上说的需要在 PMON 上输入命令，接下来就一步步地按着提示走。需要注意的是如果语言选择了简体中文，之后在 tty 终端显示会有一些信息显示不出来。还有建立分区时最好手动分区，如果是 lvm 自动分区的话，后面万一空间不足，需要调整分区很麻烦（麻烦的是缩小分区很容易出问题，扩大很简单）。选择一个好一点的镜像源，软件包把 laptop 选上，不要选那个 desktop enviroment，然后就是漫长的等待了。
@@ -71,8 +71,8 @@
 </div>
 </div>
 
-<div id="outline-container-org0391f37" class="outline-2">
-<h2 id="org0391f37"><span class="section-number-2">2.</span> 安装 Xfce4</h2>
+<div id="outline-container-orgdb58eb2" class="outline-2">
+<h2 id="orgdb58eb2"><span class="section-number-2">2.</span> 安装 Xfce4</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 装完系统之后进入的是文本界面，我要安装一个图形界面。相比 lxde，我比较喜欢 xfce4。要安装 xfce4,
@@ -205,8 +205,8 @@ apt-get install font-manager ttf-arphic-uming ttf-arphic-ukai sensible-mda sensi
 </div>
 </div>
 
-<div id="outline-container-org984df3d" class="outline-2">
-<h2 id="org984df3d"><span class="section-number-2">3.</span> 我额外安装的软件包</h2>
+<div id="outline-container-org648f48f" class="outline-2">
+<h2 id="org648f48f"><span class="section-number-2">3.</span> 我额外安装的软件包</h2>
 <div class="outline-text-2" id="text-3">
 <div class="org-src-container">
 <pre class="src src-sh">apt-get install vim # 没什么好说的，linux 中 vim 是必须装的
